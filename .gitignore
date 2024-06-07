@@ -1,5 +1,6 @@
-.idea
 .venv
+.idea
 *.xml
-venv
+*.iml
 .env
+apps/migrations/*

@@ -45,6 +45,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'root.wsgi.application'
 
 DATABASES = {

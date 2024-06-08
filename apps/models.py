@@ -2,6 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db.models import CharField, Model, PositiveIntegerField, ForeignKey, CASCADE
 from django.utils.translation import gettext_lazy as _
 from django_ckeditor_5.fields import CKEditor5Field
+from parler.models import TranslatableModel, TranslatedFields
 
 
 class User(AbstractUser):
@@ -14,17 +15,21 @@ class User(AbstractUser):
         verbose_name_plural = _('Users')
 
 
-class Category(Model):
-    name = CharField(verbose_name=_('category_name'), max_length=75)
+class Category(TranslatableModel):
+    translations = TranslatedFields(
+        name=CharField(verbose_name=_('category_name'), max_length=75)
+    )
 
     class Meta:
         verbose_name = _('Category')
         verbose_name_plural = _('Categories')
 
 
-class Product(Model):
-    title = CharField(verbose_name=_('product_title'), max_length=75)
-    description = CKEditor5Field(verbose_name=_('product_description'), config_name='extends')
+class Product(TranslatableModel):
+    translations = TranslatedFields(
+        title=CharField(verbose_name=_('product_title'), max_length=75),
+        description=CKEditor5Field(verbose_name=_('product_description'), config_name='extends')
+    )
     price = PositiveIntegerField(verbose_name=_('product_price'))
     quantity = PositiveIntegerField(verbose_name=_('product_quantity'))
     category = ForeignKey(verbose_name=_('product_category'), to='apps.Category', on_delete=CASCADE)

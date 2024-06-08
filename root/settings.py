@@ -128,7 +128,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Luch Stom Interprice",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "apps/logo.png",
+    "site_logo": "img/img.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,

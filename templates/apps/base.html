@@ -73,10 +73,10 @@
                 <div class="col-lg-6 col-md-5 col-12">
                     <!-- Contact -->
                     <ul class="top-link">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">{% trans 'About' %}</a></li>
+                        <li><a href="#">{% trans 'Products' %}</a></li>
+                        <li><a href="{% url 'contact_view' %}">{% trans 'Contact' %}</a></li>
+                        <li><a href="#">{% trans 'FAQ' %}</a></li>
                     </ul>
                     <!-- End Contact -->
                 </div>
@@ -101,7 +101,9 @@
                     <div class="col-lg-3 col-md-3 col-12">
                         <!-- Start Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="{% static 'img/logo.png' %}" alt="#"></a>
+                            <a href="{% url 'base_dashboard_view' %}">
+                                <img src="{% static 'img/logo.png' %}" alt="#">
+                            </a>
                         </div>
                         <!-- End Logo -->
                         <!-- Mobile Nav -->
@@ -113,14 +115,16 @@
                         <div class="main-menu">
                             <nav class="navigation">
                                 <ul class="nav menu">
-                                    <li class="active"><a href="#">Home <i class="icofont-rounded-down"></i></a>
+                                    <li class="active">
+                                        <a href="{% url 'base_dashboard_view' %}">Home<i
+                                                class="icofont-rounded-down"></i></a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home Page 1</a></li>
+                                            <li><a href="{% url 'base_dashboard_view' %}">Home Page</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Doctos </a></li>
-                                    <li><a href="#">Services </a></li>
-                                    <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
+                                    <li><a href="#">Doctors</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Pages<i class="icofont-rounded-down"></i></a>
                                         <ul class="dropdown">
                                             <li><a href="404.html">404 Error</a></li>
                                         </ul>
@@ -130,7 +134,7 @@
                                             <li><a href="blog-single.html">Blog Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="{% url 'contact_view' %}">Contact Us</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -141,7 +145,7 @@
                             <a href="appointment.html" class="btn">Book Appointment</a>
                         </div>
                     </div>
-                </div>
+                </div>Blogs 
             </div>
         </div>
     </div>

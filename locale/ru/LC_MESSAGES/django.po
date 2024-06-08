@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-08 02:50+0000\n"
-"PO-Revision-Date: 2024-06-08 03:12+0000\n"
+"POT-Creation-Date: 2024-06-08 11:48+0000\n"
+"PO-Revision-Date: 2024-06-08 11:50+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -87,7 +87,7 @@ msgstr "Категория продукта"
 msgid "Product"
 msgstr "Продукт"
 
-#: apps/models.py:39
+#: apps/models.py:39 templates/apps/base.html:77
 msgid "Products"
 msgstr "Продукты"
 
@@ -102,3 +102,15 @@ msgstr "Русский"
 #: root/settings.py:85
 msgid "Uzbek"
 msgstr "Узбекский"
+
+#: templates/apps/base.html:76
+msgid "About"
+msgstr "О нас"
+
+#: templates/apps/base.html:78
+msgid "Contact"
+msgstr "Контакты"
+
+#: templates/apps/base.html:79
+msgid "FAQ"
+msgstr "FAQ"

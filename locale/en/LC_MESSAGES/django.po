@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-08 02:50+0000\n"
+"PO-Revision-Date: 2024-06-08 03:06+0000\n"
+"Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: apps/admin.py:15
+msgid "Personal info"
+msgstr "Personal info"
+
+#: apps/admin.py:17
+msgid "Permissions"
+msgstr "Permissions"
+
+#: apps/admin.py:28
+msgid "Important dates"
+msgstr "Important dates"
+
+#: apps/models.py:9
+msgid "first_name"
+msgstr "Firstname"
+
+#: apps/models.py:10
+msgid "last_name"
+msgstr "Lastname"
+
+#: apps/models.py:11
+msgid "username"
+msgstr "username"
+
+#: apps/models.py:14
+msgid "User"
+msgstr "User"
+
+#: apps/models.py:15
+msgid "Users"
+msgstr "Users"
+
+#: apps/models.py:20
+msgid "category_name"
+msgstr "Name of category"
+
+#: apps/models.py:24
+msgid "Category"
+msgstr "Category"
+
+#: apps/models.py:25
+msgid "Categories"
+msgstr "Categories"
+
+#: apps/models.py:30
+msgid "product_title"
+msgstr "Title of product"
+
+#: apps/models.py:31
+msgid "product_description"
+msgstr "Description of product"
+
+#: apps/models.py:33
+msgid "product_price"
+msgstr "Price of product"
+
+#: apps/models.py:34
+msgid "product_quantity"
+msgstr "Quantity of product"
+
+#: apps/models.py:35
+msgid "product_category"
+msgstr "Category of product"
+
+#: apps/models.py:38
+msgid "Product"
+msgstr "Product"
+
+#: apps/models.py:39
+msgid "Products"
+msgstr "Products"
+
+#: root/settings.py:83
+msgid "English"
+msgstr "English"
+
+#: root/settings.py:84
+msgid "Russian"
+msgstr "Russian"
+
+#: root/settings.py:85
+msgid "Uzbek"
+msgstr "Uzbek"

@@ -89,6 +89,18 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR / 'locale')
 ]
 
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'ru'},
+        {'code': 'uz'},
+    ),
+    'default': {
+        'fallbacks': ['en'],  # defaults to PARLER_DEFAULT_LANGUAGE_CODE
+        'hide_untranslated': False,  # the default; let .active_translations() return fallbacks too.
+    }
+}
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
@@ -116,7 +128,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Luch Stom Interprice",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "books/img/logo.png",
+    "site_logo": "logo.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,

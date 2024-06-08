@@ -36,7 +36,7 @@ class CustomUserAdmin(UserAdmin):
             },
         ),
     )
-
+    
 
 @admin.register(Category)
 class CategoryTranslatableAdmin(TranslatableAdmin):

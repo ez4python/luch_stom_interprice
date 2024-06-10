@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-08 11:48+0000\n"
-"PO-Revision-Date: 2024-06-08 11:49+0000\n"
+"POT-Creation-Date: 2024-06-10 10:27+0000\n"
+"PO-Revision-Date: 2024-06-10 10:31+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -87,7 +87,7 @@ msgstr "Category of product"
 msgid "Product"
 msgstr "Product"
 
-#: apps/models.py:39 templates/apps/base.html:77
+#: apps/models.py:39 templates/apps/base.html:75
 msgid "Products"
 msgstr "Products"
 
@@ -103,14 +103,50 @@ msgstr "Russian"
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: templates/apps/base.html:76
+#: templates/apps/base.html:74
 msgid "About"
 msgstr "About"
 
-#: templates/apps/base.html:78
+#: templates/apps/base.html:76
 msgid "Contact"
 msgstr "Contact"
 
-#: templates/apps/base.html:79
+#: templates/apps/base.html:77
 msgid "FAQ"
 msgstr "FAQ"
+
+#: templates/apps/dashboard.html:83
+msgid "Free services"
+msgstr ""
+
+#: templates/apps/dashboard.html:84
+msgid ""
+"We also have free services such as delivery and installation of our products"
+msgstr ""
+
+#: templates/apps/dashboard.html:85 templates/apps/dashboard.html:100
+#: templates/apps/dashboard.html:119
+msgid "LEARN MORE"
+msgstr ""
+
+#: templates/apps/dashboard.html:99
+msgid ""
+"Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in "
+"convallis sodales."
+msgstr ""
+
+#: templates/apps/dashboard.html:113
+msgid "Opening Hours"
+msgstr ""
+
+#: templates/apps/dashboard.html:115
+msgid "Monday - Friday"
+msgstr ""
+
+#: templates/apps/dashboard.html:116
+msgid "Saturday"
+msgstr ""
+
+#: templates/apps/dashboard.html:117
+msgid "Monday - Thursday"
+msgstr ""

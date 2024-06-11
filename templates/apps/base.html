@@ -219,7 +219,8 @@
                         <h2>{% trans 'Newsletter' %}</h2>
                         <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit,</p>
-                        <form action="#" method="get" target="_blank" class="newsletter-inner">
+                        <form action="{% url 'sign_for_news_view' %}" method="post" class="newsletter-inner">
+                            {% csrf_token %}
                             <input name="email" placeholder="Email Address" class="common-input"
                                    onfocus="this.placeholder = ''"
                                    onblur="this.placeholder = 'Your email address'" required="" type="email">

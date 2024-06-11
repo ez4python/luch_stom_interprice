@@ -17,7 +17,7 @@
                                     pellentesque, faucibus libero eu, gravida quam. </p>
                                 <div class="button">
                                     <a href="#" class="btn">Get Appointment</a>
-                                    <a href="#" class="btn primary">Learn More</a>
+                                    <a href="#" class="btn primary">{% trans 'Learn More' %}</a>
                                 </div>
                             </div>
                         </div>
@@ -36,7 +36,7 @@
                                     pellentesque, faucibus libero eu, gravida quam. </p>
                                 <div class="button">
                                     <a href="#" class="btn">Get Appointment</a>
-                                    <a href="#" class="btn primary">About Us</a>
+                                    <a href="#" class="btn primary">{% trans 'About Us' %}</a>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                                     pellentesque, faucibus libero eu, gravida quam. </p>
                                 <div class="button">
                                     <a href="#" class="btn">Get Appointment</a>
-                                    <a href="{% url 'contact_view' %}" class="btn primary">Contact Now</a>
+                                    <a href="{% url 'contact_view' %}" class="btn primary">{% trans 'Contact Now' %}</a>
                                 </div>
                             </div>
                         </div>
@@ -666,11 +666,13 @@
                 <div class="col-lg-6  col-12">
                     <!-- Start Newsletter Form -->
                     <div class="subscribe-form ">
-                        <form action="#" method="get" target="_blank" class="newsletter-inner">
-                            <input name="EMAIL" placeholder="Your email address" class="common-input"
+                        <form action="{% url 'sign_for_news_view' %}" method="post" target="_blank"
+                              class="newsletter-inner">
+                            <input name="email" placeholder="Your email address" class="common-input"
                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
                                    required="" type="email">
-                            <button class="btn">Subscribe</button>
+                            {% csrf_token %}
+                            <button class="btn">{% trans 'Subscribe' %}</button>
                         </form>
                     </div>
                     <!-- End Newsletter Form -->

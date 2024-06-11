@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-10 10:27+0000\n"
+"POT-Creation-Date: 2024-06-11 10:58+0000\n"
 "PO-Revision-Date: 2024-06-10 10:31+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Category of product"
 msgid "Product"
 msgstr "Product"
 
-#: apps/models.py:39 templates/apps/base.html:75
+#: apps/models.py:39 templates/apps/base.html:75 templates/apps/base.html:118
 msgid "Products"
 msgstr "Products"
 
@@ -111,9 +111,106 @@ msgstr "About"
 msgid "Contact"
 msgstr "Contact"
 
-#: templates/apps/base.html:77
+#: templates/apps/base.html:77 templates/apps/base.html:197
 msgid "FAQ"
 msgstr "FAQ"
+
+#: templates/apps/base.html:116 templates/apps/base.html:171
+#: templates/apps/contact.html:14
+msgid "Home"
+msgstr ""
+
+#: templates/apps/base.html:117 templates/apps/base.html:176
+msgid "Services"
+msgstr ""
+
+#: templates/apps/base.html:119
+msgid "Partners"
+msgstr ""
+
+#: templates/apps/base.html:120 templates/apps/base.html:199
+#: templates/apps/contact.html:12 templates/apps/contact.html:16
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Us"
+msgstr "Contact"
+
+#: templates/apps/base.html:128
+msgid "Order technique"
+msgstr ""
+
+#: templates/apps/base.html:151 templates/apps/base.html:173
+#: templates/apps/dashboard.html:39
+#, fuzzy
+#| msgid "About"
+msgid "About Us"
+msgstr "About"
+
+#: templates/apps/base.html:152
+msgid ""
+"We ensure prompt delivery and installation of any medical equipment you "
+"purchase from us."
+msgstr ""
+
+#: templates/apps/base.html:166
+msgid "Quick Links"
+msgstr ""
+
+#: templates/apps/base.html:179
+msgid "Our Cases"
+msgstr ""
+
+#: templates/apps/base.html:182
+msgid "Other Links"
+msgstr ""
+
+#: templates/apps/base.html:189
+msgid "Consulting"
+msgstr ""
+
+#: templates/apps/base.html:192
+msgid "Finance"
+msgstr ""
+
+#: templates/apps/base.html:194
+msgid "Testimonials"
+msgstr ""
+
+#: templates/apps/base.html:208
+msgid "Open Hours"
+msgstr ""
+
+#: templates/apps/base.html:219
+msgid "Newsletter"
+msgstr ""
+
+#: templates/apps/contact.html:39
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact With Us"
+msgstr "Contact"
+
+#: templates/apps/contact.html:40
+msgid "If you have any questions please fell free to contact with us."
+msgstr ""
+
+#: templates/apps/contact.html:71
+msgid "Send"
+msgstr ""
+
+#: templates/apps/contact.html:76
+msgid "Do you want tosubscribe our Newsletter?"
+msgstr ""
+
+#: templates/apps/dashboard.html:20
+msgid "Learn More"
+msgstr ""
+
+#: templates/apps/dashboard.html:58
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Now"
+msgstr "Contact"
 
 #: templates/apps/dashboard.html:83
 msgid "Free services"

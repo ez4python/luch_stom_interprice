@@ -9,11 +9,11 @@
             <div class="bread-inner">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Contact Us</h2>
+                        <h2>{% trans 'Contact Us' %}</h2>
                         <ul class="bread-list">
-                            <li><a href="{% url 'base_dashboard_view' %}">Home</a></li>
+                            <li><a href="{% url 'base_dashboard_view' %}">{% trans 'Home' %}</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">Contact Us</li>
+                            <li class="active">{% trans 'Contact Us' %}</li>
                         </ul>
                     </div>
                 </div>
@@ -36,8 +36,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="contact-us-form">
-                            <h2>Contact With Us</h2>
-                            <p>If you have any questions please fell free to contact with us.</p>
+                            <h2>{% trans 'Contact With Us' %}</h2>
+                            <p>{% trans 'If you have any questions please fell free to contact with us.' %}</p>
                             <!-- Form -->
                             <form class="form" method="post" action="#">
                                 <div class="row">
@@ -71,9 +71,10 @@
                                             <button class="btn" type="submit">Send</button>
                                         </div>
                                         <div class="checkbox">
-                                            <label class="checkbox-inline" for="2"><input name="news" id="2"
-                                                                                          type="checkbox">Do you want to
-                                                subscribe our Newsletter ?</label>
+                                            <label class="checkbox-inline" for="2">
+                                                <input name="news" id="2" type="checkbox">
+                                                {% trans 'Do you want tosubscribe our Newsletter?' %}
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
@@ -90,8 +91,8 @@
                         <div class="single-info">
                             <i class="icofont icofont-ui-call"></i>
                             <div class="content">
-                                <h3>+998(99)-446-80-60</h3>
-                                <p>akbaralisalohiddinov808@gmail.com</p>
+                                <h3>+998(91)-221-21-43</h3>
+                                <p>info@lsi.com</p>
                             </div>
                         </div>
                     </div>

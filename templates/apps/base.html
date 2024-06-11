@@ -81,8 +81,8 @@
                 <div class="col-lg-6 col-md-7 col-12">
                     <!-- Top Contact -->
                     <ul class="top-contact">
-                        <li><i class="fa fa-phone"></i>+998(90)-446-80-60</li>
-                        <li><i class="fa fa-envelope"></i><a href="#">akbaralisalohiddinov808@gmail.com</a>
+                        <li><i class="fa fa-phone"></i>+998(91)-211-21-43</li>
+                        <li><i class="fa fa-envelope"></i><a href="#">info@lsi.com</a>
                         </li>
                     </ul>
                     <!-- End Top Contact -->
@@ -113,11 +113,11 @@
                         <div class="main-menu">
                             <nav class="navigation">
                                 <ul class="nav menu">
-                                    <li><a href="{% url 'base_dashboard_view' %}">Home</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Partners</a></li>
-                                    <li><a href="{% url 'contact_view' %}">Contact Us</a></li>
+                                    <li><a href="{% url 'base_dashboard_view' %}">{% trans 'Home' %}</a></li>
+                                    <li><a href="#">{% trans 'Services' %}</a></li>
+                                    <li><a href="#">{% trans 'Products' %}</a></li>
+                                    <li><a href="#">{% trans 'Partners' %}</a></li>
+                                    <li><a href="{% url 'contact_view' %}">{% trans 'Contact Us' %}</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -125,7 +125,7 @@
                     </div>
                     <div class="col-lg-2 col-12">
                         <div class="get-quote">
-                            <a href="appointment.html" class="btn">Book Appointment</a>
+                            <a href="appointment.html" class="btn">{% trans 'Order technique' %}</a>
                         </div>
                     </div>
                 </div>
@@ -148,9 +148,8 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="single-footer">
-                        <h2>About Us</h2>
-                        <p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore
-                            dolore magna.</p>
+                        <h2>{% trans 'About Us' %}</h2>
+                        <p>{% trans 'We ensure prompt delivery and installation of any medical equipment you purchase from us.' %}</p>
                         <!-- Social -->
                         <ul class="social">
                             <li><a href="#"><i class="icofont-facebook"></i></a></li>
@@ -164,30 +163,40 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="single-footer f-link">
-                        <h2>Quick Links</h2>
+                        <h2>{% trans 'Quick Links' %}</h2>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-12">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'Home' %}</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'About Us' %}</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'Services' %}</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'Our Cases' %}</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'Other Links' %}</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-lg-6 col-md-6 col-12">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'Consulting' %}</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'Finance' %}</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'Testimonials' %}</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'FAQ' %}</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right"
+                                                       aria-hidden="true"></i>{% trans 'Contact Us' %}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -196,7 +205,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="single-footer">
-                        <h2>Open Hours</h2>
+                        <h2>{% trans 'Open Hours' %}</h2>
                         <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
                         <ul class="time-sidual">
                             <li class="day">Monday - Friday <span>8.00-20.00</span></li>
@@ -207,7 +216,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="single-footer">
-                        <h2>Newsletter</h2>
+                        <h2>{% trans 'Newsletter' %}</h2>
                         <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit,</p>
                         <form action="#" method="get" target="_blank" class="newsletter-inner">

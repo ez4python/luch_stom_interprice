@@ -1,5 +1,5 @@
 from django.contrib.auth.models import AbstractUser
-from django.db.models import CharField, Model, PositiveIntegerField, ForeignKey, CASCADE
+from django.db.models import CharField, Model, PositiveIntegerField, ForeignKey, CASCADE, EmailField, DateTimeField
 from django.utils.translation import gettext_lazy as _
 from django_ckeditor_5.fields import CKEditor5Field
 from parler.models import TranslatableModel, TranslatedFields
@@ -37,3 +37,13 @@ class Product(TranslatableModel):
     class Meta:
         verbose_name = _('Product')
         verbose_name_plural = _('Products')
+
+
+class NewsReceiver(Model):
+    email = EmailField()
+    created_at = DateTimeField(auto_now_add=True)
+    updated_at = DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = _('News_Receiver')
+        verbose_name_plural = _('News_Receivers')

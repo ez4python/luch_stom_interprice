@@ -1,9 +1,10 @@
 from django.contrib import admin
+from django.contrib.admin import ModelAdmin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
 from parler.admin import TranslatableAdmin
 
-from apps.models import User, Category, Product
+from apps.models import User, Category, Product, NewsReceiver
 
 
 @admin.register(User)
@@ -36,7 +37,7 @@ class CustomUserAdmin(UserAdmin):
             },
         ),
     )
-    
+
 
 @admin.register(Category)
 class CategoryTranslatableAdmin(TranslatableAdmin):
@@ -46,3 +47,8 @@ class CategoryTranslatableAdmin(TranslatableAdmin):
 @admin.register(Product)
 class ProductTranslatableAdmin(TranslatableAdmin):
     list_display = ['title', 'price', 'quantity']
+
+
+@admin.register(NewsReceiver)
+class NewsReceiverModelAdmin(ModelAdmin):
+    list_display = ['email']

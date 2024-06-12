@@ -16,7 +16,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl
                                     pellentesque, faucibus libero eu, gravida quam. </p>
                                 <div class="button">
-                                    <a href="#" class="btn">Get Appointment</a>
+                                    <a href="#" class="btn">{% trans 'Get Appointment' %}</a>
                                     <a href="#" class="btn primary">{% trans 'Learn More' %}</a>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl
                                     pellentesque, faucibus libero eu, gravida quam. </p>
                                 <div class="button">
-                                    <a href="#" class="btn">Get Appointment</a>
+                                    <a href="#" class="btn">{% trans 'Get Appointment' %}</a>
                                     <a href="#" class="btn primary">{% trans 'About Us' %}</a>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl
                                     pellentesque, faucibus libero eu, gravida quam. </p>
                                 <div class="button">
-                                    <a href="#" class="btn">Get Appointment</a>
+                                    <a href="#" class="btn">{% trans 'Get Appointment' %}</a>
                                     <a href="{% url 'contact_view' %}" class="btn primary">{% trans 'Contact Now' %}</a>
                                 </div>
                             </div>
@@ -95,7 +95,7 @@
                                     <i class="icofont-prescription"></i>
                                 </div>
                                 <div class="single-content">
-                                    <h4>Employees Timetable</h4>
+                                    <h4>{% trans 'Employees Timetable' %}</h4>
                                     <p>{% trans 'Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in convallis sodales.' %}</p>
                                     <a href="#">{% trans 'LEARN MORE' %}<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
@@ -112,9 +112,8 @@
                                 <div class="single-content">
                                     <h4>{% trans 'Opening Hours' %}</h4>
                                     <ul class="time-sidual">
-                                        <li class="day">{% trans 'Monday - Friday' %} <span>8.00-20.00</span></li>
-                                        <li class="day">{% trans 'Saturday' %}<span>9.00-18.30</span></li>
-                                        <li class="day">{% trans 'Monday - Thursday' %}<span>9.00-15.00</span></li>
+                                        <li class="day">{% trans 'Monday - Friday' %} <span>9.00-19.00</span></li>
+                                        <li class="day">{% trans 'Sunday is a day off' %}</li>
                                     </ul>
                                     <a href="#">{% trans 'LEARN MORE' %}<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
@@ -146,8 +145,8 @@
                         <div class="signle-icon">
                             <i class="icofont icofont-ambulance-cross"></i>
                         </div>
-                        <h3>Emergency Help</h3>
-                        <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                        <h3>{% trans 'Emergency Help' %}</h3>
+                        <p>{% trans 'Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.' %}</p>
                     </div>
                     <!-- End Single features -->
                 </div>
@@ -157,8 +156,8 @@
                         <div class="signle-icon">
                             <i class="icofont icofont-medical-sign-alt"></i>
                         </div>
-                        <h3>Enriched Pharmecy</h3>
-                        <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                        <h3>{% trans 'Enriched Pharmecy' %}</h3>
+                        <p>{% trans 'Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.' %}</p>
                     </div>
                     <!-- End Single features -->
                 </div>
@@ -168,8 +167,8 @@
                         <div class="signle-icon">
                             <i class="icofont icofont-stethoscope"></i>
                         </div>
-                        <h3>Medical Treatment</h3>
-                        <p>Lorem ipsum sit, <!--  -->onsectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+                        <h3>{% trans 'Medical Treatment' %}</h3>
+                        <p>{% trans 'Lorem ipsum sit, onsectetur adipiscing elit. Maecenas mi quam vulputate.' %}</p>
                     </div>
                     <!-- End Single features -->
                 </div>
@@ -301,12 +300,12 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
                     <div class="content">
-                        <h2>Do you need any ? Call +998(91)-211-21-43</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec
-                            gravida.</p>
+                        <h2>{% trans 'Do you need any medical technique? Call +998(91)-211-21-43' %}</h2>
+                        <p>{% trans 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.' %}</p>
                         <div class="button">
-                            <a href="{% url 'contact_view' %}" class="btn">Contact Now</a>
-                            <a href="#" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
+                            <a href="{% url 'contact_view' %}" class="btn">{% trans 'Contact Now' %}</a>
+                            <a href="#" class="btn second">{% trans 'Learn More' %}<i
+                                    class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -650,35 +649,4 @@
         </div>
     </section>
     <!-- End Appointment -->
-
-    <!-- Start Newsletter Area -->
-    <section class="newsletter section">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-6  col-12">
-                    <!-- Start Newsletter Form -->
-                    <div class="subscribe-text ">
-                        <h6>Sign up for newsletter</h6>
-                        <p class="">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br> homero alterum.</p>
-                    </div>
-                    <!-- End Newsletter Form -->
-                </div>
-                <div class="col-lg-6  col-12">
-                    <!-- Start Newsletter Form -->
-                    <div class="subscribe-form ">
-                        <form action="{% url 'sign_for_news_view' %}" method="post" target="_blank"
-                              class="newsletter-inner">
-                            <input name="email" placeholder="Your email address" class="common-input"
-                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-                                   required="" type="email">
-                            {% csrf_token %}
-                            <button class="btn">{% trans 'Subscribe' %}</button>
-                        </form>
-                    </div>
-                    <!-- End Newsletter Form -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /End Newsletter Area -->
 {% endblock %}

@@ -7,7 +7,7 @@ from apps.models import NewsReceiver
 class EmailForm(ModelForm):
     class Meta:
         model = NewsReceiver
-        fields = ('email',)
+        fields = ['email']
 
     def clean_email(self):
         email = self.data.get('email')

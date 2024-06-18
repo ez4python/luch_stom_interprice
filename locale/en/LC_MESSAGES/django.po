@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 10:58+0000\n"
+"POT-Creation-Date: 2024-06-18 12:44+0000\n"
 "PO-Revision-Date: 2024-06-10 10:31+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: apps/admin.py:15
+#: apps/admin.py:16
 msgid "Personal info"
 msgstr "Personal info"
 
-#: apps/admin.py:17
+#: apps/admin.py:18
 msgid "Permissions"
 msgstr "Permissions"
 
-#: apps/admin.py:28
+#: apps/admin.py:29
 msgid "Important dates"
 msgstr "Important dates"
 
@@ -90,6 +90,14 @@ msgstr "Product"
 #: apps/models.py:39 templates/apps/base.html:75 templates/apps/base.html:118
 msgid "Products"
 msgstr "Products"
+
+#: apps/models.py:48
+msgid "News_Receiver"
+msgstr ""
+
+#: apps/models.py:49
+msgid "News_Receivers"
+msgstr ""
 
 #: root/settings.py:83
 msgid "English"
@@ -202,11 +210,16 @@ msgstr ""
 msgid "Do you want tosubscribe our Newsletter?"
 msgstr ""
 
-#: templates/apps/dashboard.html:20
+#: templates/apps/dashboard.html:19 templates/apps/dashboard.html:38
+#: templates/apps/dashboard.html:57
+msgid "Get Appointment"
+msgstr ""
+
+#: templates/apps/dashboard.html:20 templates/apps/dashboard.html:307
 msgid "Learn More"
 msgstr ""
 
-#: templates/apps/dashboard.html:58
+#: templates/apps/dashboard.html:58 templates/apps/dashboard.html:306
 #, fuzzy
 #| msgid "Contact"
 msgid "Contact Now"
@@ -222,8 +235,12 @@ msgid ""
 msgstr ""
 
 #: templates/apps/dashboard.html:85 templates/apps/dashboard.html:100
-#: templates/apps/dashboard.html:119
+#: templates/apps/dashboard.html:118
 msgid "LEARN MORE"
+msgstr ""
+
+#: templates/apps/dashboard.html:98
+msgid "Employees Timetable"
 msgstr ""
 
 #: templates/apps/dashboard.html:99
@@ -241,9 +258,37 @@ msgid "Monday - Friday"
 msgstr ""
 
 #: templates/apps/dashboard.html:116
-msgid "Saturday"
+msgid "Sunday is a day off"
 msgstr ""
 
-#: templates/apps/dashboard.html:117
-msgid "Monday - Thursday"
+#: templates/apps/dashboard.html:148
+msgid "Emergency Help"
+msgstr ""
+
+#: templates/apps/dashboard.html:149 templates/apps/dashboard.html:160
+msgid ""
+"Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate."
+msgstr ""
+
+#: templates/apps/dashboard.html:159
+msgid "Enriched Pharmecy"
+msgstr ""
+
+#: templates/apps/dashboard.html:170
+msgid "Medical Treatment"
+msgstr ""
+
+#: templates/apps/dashboard.html:171
+msgid ""
+"Lorem ipsum sit, onsectetur adipiscing elit. Maecenas mi quam vulputate."
+msgstr ""
+
+#: templates/apps/dashboard.html:303
+msgid "Do you need any medical technique? Call +998(91)-211-21-43"
+msgstr ""
+
+#: templates/apps/dashboard.html:304
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor "
+"dictum turpis nec gravida."
 msgstr ""

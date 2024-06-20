@@ -1,11 +1,13 @@
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView, CreateView, ListView
 
 from apps.forms import EmailForm
+from apps.models import Product
 
 
-class DashboardView(TemplateView):
+class DashboardView(ListView):
+    queryset = Product.objects.order_by('-id')
     template_name = 'apps/dashboard.html'
 
 

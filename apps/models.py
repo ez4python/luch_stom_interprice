@@ -1,8 +1,17 @@
 from django.contrib.auth.models import AbstractUser
-from django.db.models import CharField, Model, PositiveIntegerField, ForeignKey, CASCADE, EmailField, DateTimeField
+from django.db.models import CharField, Model, PositiveIntegerField, ForeignKey, CASCADE, EmailField, DateTimeField, \
+    ImageField
 from django.utils.translation import gettext_lazy as _
 from django_ckeditor_5.fields import CKEditor5Field
 from parler.models import TranslatableModel, TranslatedFields
+
+
+class BaseDateTimeModel(Model):
+    created_at = DateTimeField(verbose_name=_('created_at'), auto_now_add=True)
+    updated_at = DateTimeField(verbose_name=_('updated_at'), auto_now=True)
+
+    class Meta:
+        abstract = True
 
 
 class User(AbstractUser):
@@ -39,11 +48,21 @@ class Product(TranslatableModel):
         verbose_name_plural = _('Products')
 
 
-class NewsReceiver(Model):
+class NewsReceiver(BaseDateTimeModel):
     email = EmailField()
-    created_at = DateTimeField(auto_now_add=True)
-    updated_at = DateTimeField(auto_now=True)
 
     class Meta:
         verbose_name = _('News_Receiver')
         verbose_name_plural = _('News_Receivers')
+
+
+class New(TranslatableModel, BaseDateTimeModel):
+    translations = TranslatedFields(
+        title=CharField(verbose_name=_('new_title'), max_length=255),
+        description=CKEditor5Field(verbose_name=_('new_description'), config_name='extends')
+    )
+    image = ImageField(upload_to='news/images', verbose_name=_('new_image'))
+
+    class Meta:
+        verbose_name = _('New')
+        verbose_name_plural = _('News')

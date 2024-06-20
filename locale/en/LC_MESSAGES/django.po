@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-18 12:44+0000\n"
+"POT-Creation-Date: 2024-06-19 15:44+0000\n"
 "PO-Revision-Date: 2024-06-10 10:31+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,72 +31,102 @@ msgstr "Permissions"
 msgid "Important dates"
 msgstr "Important dates"
 
-#: apps/models.py:9
+#: apps/models.py:10
+msgid "created_at"
+msgstr ""
+
+#: apps/models.py:11
+msgid "updated_at"
+msgstr ""
+
+#: apps/models.py:18
 msgid "first_name"
 msgstr "Firstname"
 
-#: apps/models.py:10
+#: apps/models.py:19
 msgid "last_name"
 msgstr "Lastname"
 
-#: apps/models.py:11
+#: apps/models.py:20
 msgid "username"
 msgstr "username"
 
-#: apps/models.py:14
+#: apps/models.py:23
 msgid "User"
 msgstr "User"
 
-#: apps/models.py:15
+#: apps/models.py:24
 msgid "Users"
 msgstr "Users"
 
-#: apps/models.py:20
+#: apps/models.py:29
 msgid "category_name"
 msgstr "Name of category"
 
-#: apps/models.py:24
+#: apps/models.py:33
 msgid "Category"
 msgstr "Category"
 
-#: apps/models.py:25
+#: apps/models.py:34
 msgid "Categories"
 msgstr "Categories"
 
-#: apps/models.py:30
+#: apps/models.py:39
 msgid "product_title"
 msgstr "Title of product"
 
-#: apps/models.py:31
+#: apps/models.py:40
 msgid "product_description"
 msgstr "Description of product"
 
-#: apps/models.py:33
+#: apps/models.py:42
 msgid "product_price"
 msgstr "Price of product"
 
-#: apps/models.py:34
+#: apps/models.py:43
 msgid "product_quantity"
 msgstr "Quantity of product"
 
-#: apps/models.py:35
+#: apps/models.py:44
 msgid "product_category"
 msgstr "Category of product"
 
-#: apps/models.py:38
+#: apps/models.py:47
 msgid "Product"
 msgstr "Product"
 
-#: apps/models.py:39 templates/apps/base.html:75 templates/apps/base.html:118
+#: apps/models.py:48 templates/apps/base.html:75 templates/apps/base.html:118
 msgid "Products"
 msgstr "Products"
 
-#: apps/models.py:48
+#: apps/models.py:55
 msgid "News_Receiver"
 msgstr ""
 
-#: apps/models.py:49
+#: apps/models.py:56
 msgid "News_Receivers"
+msgstr ""
+
+#: apps/models.py:61
+msgid "new_title"
+msgstr ""
+
+#: apps/models.py:62
+#, fuzzy
+#| msgid "product_description"
+msgid "new_description"
+msgstr "Description of product"
+
+#: apps/models.py:64
+msgid "new_image"
+msgstr ""
+
+#: apps/models.py:67
+msgid "New"
+msgstr ""
+
+#: apps/models.py:68
+msgid "News"
 msgstr ""
 
 #: root/settings.py:83
@@ -119,16 +149,16 @@ msgstr "About"
 msgid "Contact"
 msgstr "Contact"
 
-#: templates/apps/base.html:77 templates/apps/base.html:197
+#: templates/apps/base.html:77 templates/apps/base.html:200
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/apps/base.html:116 templates/apps/base.html:171
+#: templates/apps/base.html:116 templates/apps/base.html:172
 #: templates/apps/contact.html:14
 msgid "Home"
 msgstr ""
 
-#: templates/apps/base.html:117 templates/apps/base.html:176
+#: templates/apps/base.html:117 templates/apps/base.html:179
 msgid "Services"
 msgstr ""
 
@@ -136,7 +166,7 @@ msgstr ""
 msgid "Partners"
 msgstr ""
 
-#: templates/apps/base.html:120 templates/apps/base.html:199
+#: templates/apps/base.html:120 templates/apps/base.html:203
 #: templates/apps/contact.html:12 templates/apps/contact.html:16
 #, fuzzy
 #| msgid "Contact"
@@ -147,7 +177,7 @@ msgstr "Contact"
 msgid "Order technique"
 msgstr ""
 
-#: templates/apps/base.html:151 templates/apps/base.html:173
+#: templates/apps/base.html:151 templates/apps/base.html:176
 #: templates/apps/dashboard.html:39
 #, fuzzy
 #| msgid "About"
@@ -164,31 +194,31 @@ msgstr ""
 msgid "Quick Links"
 msgstr ""
 
-#: templates/apps/base.html:179
+#: templates/apps/base.html:182
 msgid "Our Cases"
 msgstr ""
 
-#: templates/apps/base.html:182
+#: templates/apps/base.html:185
 msgid "Other Links"
 msgstr ""
 
-#: templates/apps/base.html:189
+#: templates/apps/base.html:192
 msgid "Consulting"
 msgstr ""
 
-#: templates/apps/base.html:192
+#: templates/apps/base.html:195
 msgid "Finance"
 msgstr ""
 
-#: templates/apps/base.html:194
+#: templates/apps/base.html:197
 msgid "Testimonials"
 msgstr ""
 
-#: templates/apps/base.html:208
+#: templates/apps/base.html:213
 msgid "Open Hours"
 msgstr ""
 
-#: templates/apps/base.html:219
+#: templates/apps/base.html:224
 msgid "Newsletter"
 msgstr ""
 
@@ -261,26 +291,46 @@ msgstr ""
 msgid "Sunday is a day off"
 msgstr ""
 
-#: templates/apps/dashboard.html:148
-msgid "Emergency Help"
+#: templates/apps/dashboard.html:135
+msgid "We Are Always Ready to Provide Our Service"
 msgstr ""
 
-#: templates/apps/dashboard.html:149 templates/apps/dashboard.html:160
+#: templates/apps/dashboard.html:137
 msgid ""
-"Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate."
+"Open up new horizons in medical diagnostics with our advanced radiology "
+"equipment. Improved image quality, diagnostic accuracy and innovative "
+"technologies are all available with our solutions. Trust the reliability and "
+"professionalism of our products for a successful medical practice."
+msgstr ""
+
+#: templates/apps/dashboard.html:148
+msgid "Quality of technique"
+msgstr ""
+
+#: templates/apps/dashboard.html:149
+msgid ""
+"Before delivery, equipment and consumables are tested for compliance with "
+"stated standards and certificates."
 msgstr ""
 
 #: templates/apps/dashboard.html:159
-msgid "Enriched Pharmecy"
+msgid "High On-Time Delivery Rate."
+msgstr ""
+
+#: templates/apps/dashboard.html:160
+msgid ""
+"We have local experts on hand at all times, and our \"no excuses\" approach "
+"ensures that we are responsible for every pickup and delivery."
 msgstr ""
 
 #: templates/apps/dashboard.html:170
-msgid "Medical Treatment"
+msgid "Complex equipment"
 msgstr ""
 
 #: templates/apps/dashboard.html:171
 msgid ""
-"Lorem ipsum sit, onsectetur adipiscing elit. Maecenas mi quam vulputate."
+"Optimized solutions for comprehensive equipment of medical facilities of any "
+"complexity and in accordance with the available budget."
 msgstr ""
 
 #: templates/apps/dashboard.html:303

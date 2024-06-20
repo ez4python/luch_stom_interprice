@@ -96,8 +96,8 @@ PARLER_LANGUAGES = {
         {'code': 'uz'},
     ),
     'default': {
-        'fallbacks': ['en'],  # defaults to PARLER_DEFAULT_LANGUAGE_CODE
-        'hide_untranslated': False,  # the default; let .active_translations() return fallbacks too.
+        'fallbacks': ['en'],
+        'hide_untranslated': False,
     }
 }
 

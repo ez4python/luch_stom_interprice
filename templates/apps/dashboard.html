@@ -236,9 +236,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>We Offer Different Services To Improve Your Health</h2>
+                        <h2>{% trans 'Our Service Center' %}</h2>
                         <img src="{% static 'img/section-img.png' %}" alt="#">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                        <p>{% trans 'So far we have cooperated with many manufacturers all around the world' %}</p>
                     </div>
                 </div>
             </div>
@@ -246,24 +246,29 @@
                 <div class="col-lg-6 col-12">
                     <!-- Start Choose Left -->
                     <div class="choose-left">
-                        <h3>{% trans 'Who We Are' %}</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est
-                            lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo. </p>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        </p>
+                        <h3>{% trans 'Some Information About Us' %}</h3>
+                        <p>{% trans 'Luch Stom Interprise LLC has successfully installed 164 units of ultrasound devices supplied by Wuxi Haiying Medical Devices Co Ltd' %}</p>
+                        <p>{% trans 'Luch Stom Interpsie LLC has been assigned as service center for installation, repairing and maintance for ultrasound devices in the amount 1200 units supplied by Mindray' %}</p>
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <ul class="list">
-                                    <li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh.</li>
-                                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                                    <li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+                                    <li>
+                                        <i class="fa fa-caret-right"></i>{% trans 'Medical equipment in Tashkent, Uzbekistan' %}
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-caret-right"></i>{% trans 'Dental equipment in Uzbekistan' %}
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-caret-right"></i>{% trans 'Sales covers overall Republic of Uzbekistan' %}
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-caret-right"></i>{% trans 'Sales agent present in main cities of Uzbekistan: Samarqand, Qarshi, Bukhara.' %}
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-lg-6">
                                 <ul class="list">
-                                    <li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh.</li>
-                                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                                    <li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+
                                 </ul>
                             </div>
                         </div>
@@ -272,7 +277,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <!-- Start Choose Rights -->
-                    <div class="choose-right">
+                    <div class="choose-right" style="background-image: url({% static 'img/service.png' %})">
                         <div class="video-image">
                             <!-- Video Animation -->
                             <div class="promo-video">

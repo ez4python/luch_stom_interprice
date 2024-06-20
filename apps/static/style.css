@@ -309,7 +309,6 @@ body{
 }
 .header .logo {
 	float: left;
-	margin-top: 18px;
 }
 .header .navbar {
 	background: none;
@@ -904,7 +903,7 @@ body{
 	padding:120px 0;
 }
 .fun-facts{
-	background:url('img/fun-bg.jpg');
+	/*background:url('img/fun-bg.jpg');*/
 	background-size:cover;
 	background-repeat:no-repeat;
 }
@@ -948,7 +947,7 @@ body{
 	display: block;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
-	transition: all 0.4s eas;
+	transition: all 0.4s;
 	display: block;
 	margin-bottom: 7px;
 }
@@ -1714,7 +1713,7 @@ body{
 	Start Clients CSS
 ==========================*/
 .clients{
-	background-image:url('img/client-bg.jpg');
+	/*background-image:url('img/client-bg.jpg');*/
 	background-size:cover;
 	background-position:center;
 	padding:100px 0px;
@@ -2517,7 +2516,7 @@ body{
 	width: 85%;
 }
 .news-single .single-comments.left .body{
-	float: noene;
+	float: none;
 	width:100%;
 }
 .news-single .single-comments .comment-list {

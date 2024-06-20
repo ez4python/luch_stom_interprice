@@ -1,7 +1,7 @@
 {% load static %}
 {% load i18n %}
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="ru">
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
@@ -71,10 +71,11 @@
                 <div class="col-lg-6 col-md-5 col-12">
                     <!-- Contact -->
                     <ul class="top-link">
-                        <li><a href="#">{% trans 'About' %}</a></li>
-                        <li><a href="#">{% trans 'Products' %}</a></li>
-                        <li><a href="{% url 'contact_view' %}">{% trans 'Contact' %}</a></li>
-                        <li><a href="#">{% trans 'FAQ' %}</a></li>
+                        <li><a href="#">{% trans 'Home' %}</a></li>
+                        <li><a href="#">{% trans 'Services' %}</a></li>
+                        <li><a href="{% url 'contact_view' %}">{% trans 'Products' %}</a></li>
+                        <li><a href="#">{% trans 'Partners' %}</a></li>
+                        <li><a href="#">{% trans 'Contact Us' %}</a></li>
                     </ul>
                     <!-- End Contact -->
                 </div>
@@ -100,7 +101,7 @@
                         <!-- Start Logo -->
                         <div class="logo">
                             <a href="{% url 'base_dashboard_view' %}">
-                                <img src="{% static 'img/img.png' %}" alt="#">
+                                <img src="{% static 'img/logo.png' %}" style="width: 90px" alt="#">
                             </a>
                         </div>
                         <!-- End Logo -->

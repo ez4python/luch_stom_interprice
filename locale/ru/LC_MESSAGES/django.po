@@ -132,11 +132,11 @@ msgstr ""
 
 #: templates/apps/base.html:117 templates/apps/base.html:176
 msgid "Services"
-msgstr ""
+msgstr "Услуги"
 
 #: templates/apps/base.html:119
 msgid "Partners"
-msgstr ""
+msgstr "Партнеры"
 
 #: templates/apps/base.html:120 templates/apps/base.html:199
 #: templates/apps/contact.html:12 templates/apps/contact.html:16
@@ -147,7 +147,7 @@ msgstr "Контакты"
 
 #: templates/apps/base.html:128
 msgid "Order technique"
-msgstr ""
+msgstr "Заказать технику"
 
 #: templates/apps/base.html:151 templates/apps/base.html:173
 #: templates/apps/dashboard.html:39

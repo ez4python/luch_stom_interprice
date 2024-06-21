@@ -5,6 +5,8 @@ from django.utils.translation import gettext_lazy as _
 from django_ckeditor_5.fields import CKEditor5Field
 from parler.models import TranslatableModel, TranslatedFields
 
+from apps.tasks import task_send_email
+
 
 class BaseDateTimeModel(Model):
     created_at = DateTimeField(verbose_name=_('created_at'), auto_now_add=True)
@@ -54,9 +56,15 @@ class Product(TranslatableModel):
     def __str__(self):
         return self.title
 
+    def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
+        if self.created_at is None:
+            all_emails: list = NewsReceiver.objects.values_list('email', flat=True)
+            task_send_email.delay('LUCH STOM INTERPRISE ', self.name, list(all_emails))
+        super().save(force_insert, force_update, using, update_fields)
+
 
 class NewsReceiver(BaseDateTimeModel):
-    email = EmailField()
+    email = EmailField(unique=True)
 
     class Meta:
         verbose_name = _('News_Receiver')

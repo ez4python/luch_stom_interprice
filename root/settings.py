@@ -19,7 +19,8 @@ INSTALLED_APPS = [
     'apps.apps.AppsConfig',
     'django_ckeditor_5',
     'rosetta',
-    'parler'
+    'parler',
+    'django_celery_results'
 ]
 
 MIDDLEWARE = [
@@ -258,14 +259,6 @@ JAZZMIN_SETTINGS = {
     "language_chooser": True,
 }
 
-# email-settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 465
-EMAIL_USE_SSL = True
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
-
 # django-ckeditor-5 settings
 customColorPalette = [
     {
@@ -354,3 +347,16 @@ CKEDITOR_5_CONFIGS = {
         }
     }
 }
+
+# email-settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+
+# celery-settings
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_RESULT_EXTENDED = True

@@ -39,7 +39,7 @@ class Category(TranslatableModel):
         return self.name
 
 
-class Product(TranslatableModel):
+class Product(TranslatableModel, BaseDateTimeModel):
     translations = TranslatedFields(
         title=CharField(verbose_name=_('product_title'), max_length=75),
         description=CKEditor5Field(verbose_name=_('product_description'), config_name='extends')
@@ -59,7 +59,7 @@ class Product(TranslatableModel):
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
         if self.created_at is None:
             all_emails: list = NewsReceiver.objects.values_list('email', flat=True)
-            task_send_email.delay('LUCH STOM INTERPRISE ', self.name, list(all_emails))
+            task_send_email.delay('LUCH STOM INTERPRISE ', self.title, list(all_emails))
         super().save(force_insert, force_update, using, update_fields)
 
 

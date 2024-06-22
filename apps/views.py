@@ -15,6 +15,10 @@ class ContactView(TemplateView):
     template_name = 'apps/contact.html'
 
 
+class PartnersView(TemplateView):
+    template_name = 'apps/partners.html'
+
+
 class SignForNewsCreateView(CreateView):
     template_name = 'apps/dashboard.html'
     form_class = EmailForm

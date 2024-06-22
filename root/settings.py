@@ -1,6 +1,9 @@
 import os.path
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8kpyxaf#2+nr4=dj@)%ax_wu8x+bz0_p4%(s4wplsvfqbicn+#'
@@ -62,6 +65,7 @@ DATABASES = {
 }
 
 AUTH_USER_MODEL = 'apps.User'
+LOGIN_URL = '/login'
 
 AUTH_PASSWORD_VALIDATORS = [
     # {
@@ -357,6 +361,6 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 
 # celery-settings
-CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
 CELERY_RESULT_BACKEND = 'django-db'
 CELERY_RESULT_EXTENDED = True

@@ -16,6 +16,7 @@ class ContactView(TemplateView):
 
 
 class PartnersView(TemplateView):
+    queryset = Product.objects.order_by('-id')
     template_name = 'apps/partners.html'
 
 

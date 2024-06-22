@@ -2,6 +2,18 @@
 {% load static %}
 {% load i18n %}
 {% block main_content %}
+    <style>
+        .customui:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 400%;
+            background: #fff;
+            opacity: 0.8;
+        }
+    </style>
     <!-- Breadcrumbs -->
     <div class="breadcrumbs overlay">
         <div class="container">
@@ -22,50 +34,35 @@
     <!-- End Breadcrumbs -->
 
     <!-- Start clients -->
-    <div class="clients overlay" style="background-image: none">
-        <div class="container" >
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2 style="color: white">{% trans 'Partners' %}</h2>
-                    </div>
-                </div>
-            </div>
+    <div class="clients overlay customui">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
                     <div class="owl-carousel clients-slider">
-                        <div class="single-clients">
-                            <img src="{% static 'img/mindray.png' %}" alt="#">
+                        <div class="single-clients" style="width:240px">
+                            <img src="{% static 'img/partner_1.png' %}" alt="#">
                         </div>
-                        <div class="single-clients">
-                            <img src="{% static 'img/client2.png' %}" alt="#">
+                        <div class="single-clients" style="width:240px">
+                            <img src="{% static 'img/partner_2.png' %}" alt="#">
                         </div>
-                        <div class="single-clients">
-                            <img src="{% static 'img/client3.png' %}" alt="#">
+                        <div class="single-clients" style="width:240px">
+                            <img src="{% static 'img/partner_3.png' %}" alt="#">
                         </div>
-                        <div class="single-clients">
-                            <img src="{% static 'img/client4.png' %}" alt="#">
+                        <div class="single-clients" style="width:240px">
+                            <img src="{% static 'img/partner_4.png' %}" alt="#">
                         </div>
-                        <div class="single-clients">
-                            <img src="{% static 'img/client5.png' %}" alt="#">
+                        <div class="single-clients" style="width:240px">
+                            <img src="{% static 'img/partner_5.png' %}" alt="#">
                         </div>
-                        <div class="single-clients">
-                            <img src="{% static 'img/client1.png' %}" alt="#">
-                        </div>
-                        <div class="single-clients">
-                            <img src="{% static 'img/client2.png' %}" alt="#">
-                        </div>
-                        <div class="single-clients">
-                            <img src="{% static 'img/client3.png' %}" alt="#">
-                        </div>
-                        <div class="single-clients">
-                            <img src="{% static 'img/client4.png' %}" alt="#">
+                        <div class="single-clients" style="width:240px">
+                            <img src="{% static 'img/partner_6.png' %}" alt="#">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <!--/Ens clients -->
-    
+
 {% endblock %}

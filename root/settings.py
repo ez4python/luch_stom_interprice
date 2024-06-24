@@ -124,13 +124,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
-    "site_title": "Luch Stom Interprice",
+    "site_title": "Luch Stom Interprise",
 
     # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_header": "Luch Stom Interprice",
+    "site_header": "Luch Stom Interprise",
 
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_brand": "Luch Stom Interprice",
+    "site_brand": "Luch Stom Interprise",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
     "site_logo": "img/img.png",
@@ -148,10 +148,10 @@ JAZZMIN_SETTINGS = {
     "site_icon": None,
 
     # Welcome text on the login screen
-    "welcome_sign": "Luch Stom Interprice",
+    "welcome_sign": "Luch Stom Interprise",
 
     # Copyright on the footer
-    "copyright": "Luch Stom Interprice Ltd",
+    "copyright": "Luch Stom Interprise Ltd",
 
     # List of model admins to search from the search bar, search bar omitted if excluded
     # If you want to use a single search field you dont need to use a list, you can use a simple string

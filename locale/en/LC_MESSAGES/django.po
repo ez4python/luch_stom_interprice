@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-24 09:27+0000\n"
+"POT-Creation-Date: 2024-06-24 10:44+0000\n"
 "PO-Revision-Date: 2024-06-10 10:31+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,7 +148,8 @@ msgstr "Russian"
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: templates/apps/base.html:73 templates/apps/base.html:151
+#: templates/apps/base.html:73 templates/apps/base.html:116
+#: templates/apps/base.html:151 templates/apps/base.html:172
 #: templates/apps/contact.html:14 templates/apps/partners.html:25
 #, fuzzy
 #| msgid "About"
@@ -161,7 +162,7 @@ msgid "Services"
 msgstr ""
 
 #: templates/apps/base.html:76 templates/apps/base.html:119
-#: templates/apps/dashboard.html:210 templates/apps/partners.html:23
+#: templates/apps/dashboard.html:211 templates/apps/partners.html:23
 #: templates/apps/partners.html:27
 msgid "Partners"
 msgstr ""
@@ -173,12 +174,6 @@ msgstr ""
 #| msgid "Contact"
 msgid "Contact Us"
 msgstr "Contact"
-
-#: templates/apps/base.html:116 templates/apps/base.html:172
-#, fuzzy
-#| msgid "About"
-msgid "About us"
-msgstr "About"
 
 #: templates/apps/base.html:128
 msgid "Order technique"
@@ -202,8 +197,28 @@ msgstr ""
 msgid "Open Hours"
 msgstr ""
 
-#: templates/apps/base.html:208
+#: templates/apps/base.html:200 templates/apps/dashboard.html:113
+msgid "Monday - Saturday"
+msgstr ""
+
+#: templates/apps/base.html:200 templates/apps/dashboard.html:114
+msgid "9am-7pm"
+msgstr ""
+
+#: templates/apps/base.html:201
+msgid "Sunday and Holidays - days off"
+msgstr ""
+
+#: templates/apps/base.html:207
 msgid "Newsletter"
+msgstr ""
+
+#: templates/apps/base.html:208
+msgid "Subscribe to our newsletter to get all our news in your inbox."
+msgstr ""
+
+#: templates/apps/base.html:211
+msgid "Email Address"
 msgstr ""
 
 #: templates/apps/contact.html:43
@@ -214,6 +229,22 @@ msgstr "Contact"
 
 #: templates/apps/contact.html:44
 msgid "If you have any questions please fell free to contact with us."
+msgstr ""
+
+#: templates/apps/contact.html:57
+msgid "Email"
+msgstr ""
+
+#: templates/apps/contact.html:63
+msgid "Phone"
+msgstr ""
+
+#: templates/apps/contact.html:69
+msgid "Subject"
+msgstr ""
+
+#: templates/apps/contact.html:75
+msgid "Your Message"
 msgstr ""
 
 #: templates/apps/contact.html:81
@@ -260,7 +291,7 @@ msgstr ""
 msgid "View Products"
 msgstr "Products"
 
-#: templates/apps/dashboard.html:19 templates/apps/dashboard.html:313
+#: templates/apps/dashboard.html:19 templates/apps/dashboard.html:308
 msgid "Learn More"
 msgstr ""
 
@@ -308,7 +339,7 @@ msgid ""
 msgstr ""
 
 #: templates/apps/dashboard.html:83 templates/apps/dashboard.html:98
-#: templates/apps/dashboard.html:116
+#: templates/apps/dashboard.html:117
 msgid "LEARN MORE"
 msgstr ""
 
@@ -326,19 +357,15 @@ msgstr ""
 msgid "Opening Hours"
 msgstr ""
 
-#: templates/apps/dashboard.html:113
-msgid "Monday - Friday"
-msgstr ""
-
-#: templates/apps/dashboard.html:114
+#: templates/apps/dashboard.html:115
 msgid "Sunday is a day off"
 msgstr ""
 
-#: templates/apps/dashboard.html:133
+#: templates/apps/dashboard.html:134
 msgid "We Are Always Ready to Provide Our Service"
 msgstr ""
 
-#: templates/apps/dashboard.html:135
+#: templates/apps/dashboard.html:136
 msgid ""
 "Open up new horizons in medical diagnostics with our advanced radiology "
 "equipment. Improved image quality, diagnostic accuracy and innovative "
@@ -346,130 +373,181 @@ msgid ""
 "professionalism of our products for a successful medical practice."
 msgstr ""
 
-#: templates/apps/dashboard.html:146
+#: templates/apps/dashboard.html:147
 msgid "Quality of technique"
 msgstr ""
 
-#: templates/apps/dashboard.html:147
+#: templates/apps/dashboard.html:148
 msgid ""
 "Before delivery, equipment and consumables are tested for compliance with "
 "stated standards and certificates."
 msgstr ""
 
-#: templates/apps/dashboard.html:157
+#: templates/apps/dashboard.html:158
 msgid "High On-Time Delivery Rate."
 msgstr ""
 
-#: templates/apps/dashboard.html:158
+#: templates/apps/dashboard.html:159
 msgid ""
 "We have local experts on hand at all times, and our \"no excuses\" approach "
 "ensures that we are responsible for every pickup and delivery."
 msgstr ""
 
-#: templates/apps/dashboard.html:168
+#: templates/apps/dashboard.html:169
 msgid "Complex equipment"
 msgstr ""
 
-#: templates/apps/dashboard.html:169
+#: templates/apps/dashboard.html:170
 msgid ""
 "Optimized solutions for comprehensive equipment of medical facilities of any "
 "complexity and in accordance with the available budget."
 msgstr ""
 
-#: templates/apps/dashboard.html:188
+#: templates/apps/dashboard.html:189
 msgid "Branches"
 msgstr ""
 
-#: templates/apps/dashboard.html:199
+#: templates/apps/dashboard.html:200
 msgid "Specialist Employees"
 msgstr ""
 
-#: templates/apps/dashboard.html:221
+#: templates/apps/dashboard.html:222
 msgid "Years of Experience"
 msgstr ""
 
-#: templates/apps/dashboard.html:237
+#: templates/apps/dashboard.html:238
 msgid "Our Service Center"
 msgstr ""
 
-#: templates/apps/dashboard.html:239
+#: templates/apps/dashboard.html:240
 msgid "So far we have cooperated with many manufacturers all around the world"
 msgstr ""
 
-#: templates/apps/dashboard.html:247
+#: templates/apps/dashboard.html:248
 msgid "Some Information About Us"
 msgstr ""
 
-#: templates/apps/dashboard.html:248
+#: templates/apps/dashboard.html:249
 msgid ""
 "Luch Stom Interprise LLC has successfully installed 164 units of ultrasound "
 "devices supplied by Wuxi Haiying Medical Devices Co Ltd"
 msgstr ""
 
-#: templates/apps/dashboard.html:249
+#: templates/apps/dashboard.html:250
 msgid ""
 "Luch Stom Interpsie LLC has been assigned as service center for "
 "installation, repairing and maintance for ultrasound devices in the amount "
 "1200 units supplied by Mindray"
 msgstr ""
 
-#: templates/apps/dashboard.html:254
+#: templates/apps/dashboard.html:255
 msgid "Medical equipment in Tashkent, Uzbekistan"
 msgstr ""
 
-#: templates/apps/dashboard.html:257
+#: templates/apps/dashboard.html:258
 msgid "Dental equipment in Uzbekistan"
 msgstr ""
 
-#: templates/apps/dashboard.html:260
+#: templates/apps/dashboard.html:261
 msgid "Sales covers overall Republic of Uzbekistan"
 msgstr ""
 
-#: templates/apps/dashboard.html:263
+#: templates/apps/dashboard.html:264
 msgid ""
 "Sales agent present in main cities of Uzbekistan: Samarqand, Qarshi, Bukhara."
 msgstr ""
 
-#: templates/apps/dashboard.html:309
+#: templates/apps/dashboard.html:305
 msgid "Do you need any medical technique? Call +99871-261-53-08"
 msgstr ""
 
-#: templates/apps/dashboard.html:310
-msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor "
-"dictum turpis nec gravida."
-msgstr ""
-
-#: templates/apps/dashboard.html:312
+#: templates/apps/dashboard.html:307
 #, fuzzy
 #| msgid "Contact"
 msgid "Contact Now"
 msgstr "Contact"
 
-#: templates/apps/dashboard.html:329
+#: templates/apps/dashboard.html:324
 msgid "Our best selling products so far."
 msgstr ""
 
-#: templates/apps/dashboard.html:343
+#: templates/apps/dashboard.html:337
 msgid "View Details"
 msgstr ""
 
-#: templates/apps/dashboard.html:359
+#: templates/apps/dashboard.html:353
 msgid "Completed Projects"
 msgstr ""
 
-#: templates/apps/dashboard.html:361
+#: templates/apps/dashboard.html:355
 msgid ""
 "Participated in MoH Uzbekistan procurement projects of medical equipment"
 msgstr ""
 
-#: templates/apps/dashboard.html:362
+#: templates/apps/dashboard.html:356
 msgid "Total more than 15 contracts within last 4 years"
 msgstr ""
 
-#: templates/apps/dashboard.html:363
+#: templates/apps/dashboard.html:357
 msgid "Amount of all contracts equals to 9,134,545 USD"
 msgstr ""
+
+#: templates/apps/dashboard.html:370
+msgid "22 Aug, 2020"
+msgstr ""
+
+#: templates/apps/dashboard.html:371
+msgid "COMPLETED PROJECT WORLD BANK – IDB."
+msgstr ""
+
+#: templates/apps/dashboard.html:372
+msgid "Total 7 contracts in the frame of project."
+msgstr ""
+
+#: templates/apps/dashboard.html:373
+msgid "Total amount of contracts 6 576 385 USD."
+msgstr ""
+
+#: templates/apps/dashboard.html:375
+msgid "Successfully completed and perform all obligation under contracts."
+msgstr ""
+
+#: templates/apps/dashboard.html:389
+msgid "15 Jul, 2020"
+msgstr ""
+
+#: templates/apps/dashboard.html:390
+msgid "COMPLETED PROJECT UZMEDIMPEKS."
+msgstr ""
+
+#: templates/apps/dashboard.html:391
+msgid "Total 7 contracts awarded."
+msgstr ""
+
+#: templates/apps/dashboard.html:392
+msgid "Sum of the contracts – 2,318,160 USD."
+msgstr ""
+
+#: templates/apps/dashboard.html:406
+msgid "05 Jan, 2020"
+msgstr ""
+
+#: templates/apps/dashboard.html:407
+msgid "COMPLETED PROJECT SFD SSMC PROJECT – SAUDI FUND."
+msgstr ""
+
+#: templates/apps/dashboard.html:408
+msgid "1 awarded contract."
+msgstr ""
+
+#: templates/apps/dashboard.html:409
+msgid "Sum of the contract 240 000 USD."
+msgstr ""
+
+#, fuzzy
+#~| msgid "About"
+#~ msgid "About us"
+#~ msgstr "About"
 
 #~ msgid "About"
 #~ msgstr "About"

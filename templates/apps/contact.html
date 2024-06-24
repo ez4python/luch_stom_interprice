@@ -11,7 +11,7 @@
                     <div class="col-12">
                         <h2>{% trans 'Contact Us' %}</h2>
                         <ul class="bread-list">
-                            <li><a href="{% url 'base_dashboard_view' %}">{% trans 'Home' %}</a></li>
+                            <li><a href="{% url 'base_dashboard_view' %}">{% trans 'About Us' %}</a></li>
                             <li><i class="icofont-simple-right"></i></li>
                             <li class="active">{% trans 'Contact Us' %}</li>
                         </ul>
@@ -54,29 +54,29 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input style="text-transform: none" type="email" name="email"
-                                                   placeholder="Email" required="">
+                                                   placeholder="{% trans 'Email' %}" required="">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input style="text-transform: none" type="number" name="phone"
-                                                   placeholder="Phone" required="">
+                                                   placeholder="{% trans 'Phone' %}" required="">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input style="text-transform: none" type="text" name="subject"
-                                                   placeholder="Subject" required="">
+                                                   placeholder="{% trans 'Subject' %}" required="">
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <textarea style="text-transform: none" name="message"
-                                                      placeholder="Your Message"
-                                                      required=""></textarea>
+                                                      placeholder="{% trans 'Your Message' %}" required="">
+                                            </textarea>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class=" col-12">
                                         <div class="form-group login-btn">
                                             <button class="btn" type="submit">{% trans 'Send' %}</button>
                                         </div>

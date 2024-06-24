@@ -1,0 +1,138 @@
+{% extends 'apps/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block main_content %}
+    <link rel="stylesheet" href="{% static 'product.css' %}">
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{% trans 'Products' %}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'base_dashboard_view' %}">{% trans 'Home' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">{% trans 'Products' %}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+    <section class="section_header">
+        <div class="container">
+            <div class="section_div">
+                <h4 class="section_title">
+                    Product
+                </h4>
+                <button class="section_search">
+                    <img src="./img/search-interface-symbol.png" alt="" class="section_search-img">
+                    <input type=" text" class="section_search-input" placeholder="  Поиск оборудований" id="">
+                </button>
+            </div>
+
+            <div class="section_medik">
+                <h2 class="section_medik-title">Все</h2>
+                <div class="col-12 col-md-3 section_medik-left">
+                    <div class="section_medik-chass">
+                        <a class="section_medik-info puff" href="https://endo.uz/categories/vse/">
+                            <span class="puff_title">Все</span>
+                            <span>86</span>
+                        </a>
+                        <a class="section_medik-info" href="https://endo.uz/categories/diagnostika/">
+                            <span class="puff_title">Диагностика</span>
+                            <span>19</span>
+                        </a>
+                        <a class="section_medik-info" href="https://endo.uz/categories/labaratoriya/">
+                            <span class="puff_title">Лаборатория</span>
+                            <span>7</span>
+                        </a>
+                        <a class="section_medik-info" href="https://endo.uz/categories/laparoskopiyaginekologiya/">
+                            <span class="puff_title">Лапароскопия и Гинекология</span>
+                            <span>5</span>
+                        </a>
+                        <a class="section_medik-info" href="https://endo.uz/categories/sterilizatsiya/">
+                            <span class="puff_title">Стерилизация</span>
+                            <span>6</span>
+                        </a>
+                        <a class="section_medik-info" href="https://endo.uz/categories/travmatologiya/">
+                            <span class="puff_title">Травматалогия</span>
+                            <span>1</span>
+                        </a>
+                        <a class="section_medik-info" href="https://endo.uz/categories/fizioterapiya/">
+                            <span class="puff_title">Физиотерапия</span>
+                            <span>12</span>
+                        </a>
+                        <a class="section_medik-info" href="https://endo.uz/categories/xirurgiyaryanimatsiya/">
+                            <span class="puff_title">Хирургия и Реанимация</span>
+                            <span>27</span>
+                        </a>
+                        <a class="section_medik-info puff1" href="https://endo.uz/categories/endourologiya/">
+                            <span class="puff_title">Эндоурология</span>
+                            <span>7</span>
+                        </a>
+
+                    </div>
+
+                    <div class="  section_medik-right">
+                        <div class="section_medik-fuut row">
+                            <a href="https://endo.uz/products/763/" class="product_card">
+                                <img class="product_card-img" src="https://endo.uz/wp-content/uploads/2023/12/7.png"
+                                     alt="">
+                                <p class="text">Морцеллятор Гинекологический</p>
+                            </a>
+                        </div>
+                        <div class="section_medik-fuut">
+                            <a href="https://endo.uz/products/763/" class="product_card">
+                                <img class="product_card-img" src="https://endo.uz/wp-content/uploads/2023/12/7.png"
+                                     alt="">
+                                <p class="text">Морцеллятор Гинекологический</p>
+                            </a>
+                        </div>
+                        <div class="section_medik-fuut">
+                            <a href="https://endo.uz/products/763/" class="product_card">
+                                <img class="product_card-img" src="https://endo.uz/wp-content/uploads/2023/12/7.png"
+                                     alt="">
+                                <p class="text">Морцеллятор Гинекологический</p>
+                            </a>
+                        </div>
+                        <div class="section_medik-fuut">
+                            <a href="https://endo.uz/products/763/" class="product_card">
+                                <img class="product_card-img" src="https://endo.uz/wp-content/uploads/2023/12/7.png"
+                                     alt="">
+                                <p class="text">Морцеллятор Гинекологический</p>
+                            </a>
+                        </div>
+                        <div class="section_medik-fuut">
+                            <a href="https://endo.uz/products/763/" class="product_card">
+                                <img class="product_card-img" src="https://endo.uz/wp-content/uploads/2023/12/7.png"
+                                     alt="">
+                                <p class="text">Морцеллятор Гинекологический</p>
+                            </a>
+                        </div>
+                        <div class="section_medik-fuut">
+                            <a href="https://endo.uz/products/763/" class="product_card">
+                                <img class="product_card-img" src="https://endo.uz/wp-content/uploads/2023/12/7.png"
+                                     alt="">
+                                <p class="text">Морцеллятор Гинекологический</p>
+                            </a>
+                        </div>
+                        <div class="section_medik-fuut">
+                            <a href="https://endo.uz/products/763/" class="product_card">
+                                <img class="product_card-img" src="https://endo.uz/wp-content/uploads/2023/12/7.png"
+                                     alt="">
+                                <p class="text">Морцеллятор Гинекологический</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-20 15:13+0000\n"
+"POT-Creation-Date: 2024-06-24 09:27+0000\n"
 "PO-Revision-Date: 2024-06-10 10:31+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,277 +31,314 @@ msgstr "Permissions"
 msgid "Important dates"
 msgstr "Important dates"
 
-#: apps/models.py:10
+#: apps/models.py:12
 msgid "created_at"
 msgstr ""
 
-#: apps/models.py:11
+#: apps/models.py:13
 msgid "updated_at"
 msgstr ""
 
-#: apps/models.py:18
+#: apps/models.py:20
 msgid "first_name"
 msgstr "Firstname"
 
-#: apps/models.py:19
+#: apps/models.py:21
 msgid "last_name"
 msgstr "Lastname"
 
-#: apps/models.py:20
+#: apps/models.py:22
 msgid "username"
 msgstr "username"
 
-#: apps/models.py:23
+#: apps/models.py:25
 msgid "User"
 msgstr "User"
 
-#: apps/models.py:24
+#: apps/models.py:26
 msgid "Users"
 msgstr "Users"
 
-#: apps/models.py:29
+#: apps/models.py:31
 msgid "category_name"
 msgstr "Name of category"
 
-#: apps/models.py:33
+#: apps/models.py:35
 msgid "Category"
 msgstr "Category"
 
-#: apps/models.py:34
+#: apps/models.py:36
 msgid "Categories"
 msgstr "Categories"
 
-#: apps/models.py:42
+#: apps/models.py:44
 msgid "product_title"
 msgstr "Title of product"
 
-#: apps/models.py:43
+#: apps/models.py:45
 msgid "product_description"
 msgstr "Description of product"
 
-#: apps/models.py:45
+#: apps/models.py:47
 #, fuzzy
 #| msgid "product_title"
 msgid "product_image"
 msgstr "Title of product"
 
-#: apps/models.py:46
+#: apps/models.py:48
 msgid "product_price"
 msgstr "Price of product"
 
-#: apps/models.py:47
+#: apps/models.py:49
 msgid "product_quantity"
 msgstr "Quantity of product"
 
-#: apps/models.py:48
+#: apps/models.py:50
 msgid "product_category"
 msgstr "Category of product"
 
-#: apps/models.py:51
+#: apps/models.py:53
 msgid "Product"
 msgstr "Product"
 
-#: apps/models.py:52 templates/apps/base.html:76 templates/apps/base.html:119
-#: templates/apps/base.html:182
+#: apps/models.py:54 templates/apps/base.html:75 templates/apps/base.html:118
+#: templates/apps/base.html:181
 msgid "Products"
 msgstr "Products"
 
-#: apps/models.py:62
+#: apps/models.py:72
 msgid "News_Receiver"
 msgstr ""
 
-#: apps/models.py:63
+#: apps/models.py:73
 msgid "News_Receivers"
 msgstr ""
 
-#: apps/models.py:68
+#: apps/models.py:78
 msgid "new_title"
 msgstr ""
 
-#: apps/models.py:69
+#: apps/models.py:79
 #, fuzzy
 #| msgid "product_description"
 msgid "new_description"
 msgstr "Description of product"
 
-#: apps/models.py:71
+#: apps/models.py:81
 msgid "new_image"
 msgstr ""
 
-#: apps/models.py:74
+#: apps/models.py:84
 msgid "New"
 msgstr ""
 
-#: apps/models.py:75
+#: apps/models.py:85
 msgid "News"
 msgstr ""
 
-#: root/settings.py:83
+#: root/settings.py:88
 msgid "English"
 msgstr "English"
 
-#: root/settings.py:84
+#: root/settings.py:89
 msgid "Russian"
 msgstr "Russian"
 
-#: root/settings.py:85
+#: root/settings.py:90
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: templates/apps/base.html:74 templates/apps/contact.html:14
-msgid "Home"
-msgstr ""
-
-#: templates/apps/base.html:75 templates/apps/base.html:118
-#: templates/apps/base.html:179
-msgid "Services"
-msgstr ""
-
-#: templates/apps/base.html:77 templates/apps/base.html:120
-#: templates/apps/dashboard.html:212 templates/apps/dashboard.html:442
-msgid "Partners"
-msgstr ""
-
-#: templates/apps/base.html:78 templates/apps/base.html:121
-#: templates/apps/base.html:186 templates/apps/contact.html:12
-#: templates/apps/contact.html:16
-#, fuzzy
-#| msgid "Contact"
-msgid "Contact Us"
-msgstr "Contact"
-
-#: templates/apps/base.html:117 templates/apps/base.html:173
-#, fuzzy
-#| msgid "About"
-msgid "About us"
-msgstr "About"
-
-#: templates/apps/base.html:129
-msgid "Order technique"
-msgstr ""
-
-#: templates/apps/base.html:152 templates/apps/dashboard.html:39
+#: templates/apps/base.html:73 templates/apps/base.html:151
+#: templates/apps/contact.html:14 templates/apps/partners.html:25
 #, fuzzy
 #| msgid "About"
 msgid "About Us"
 msgstr "About"
 
-#: templates/apps/base.html:153
+#: templates/apps/base.html:74 templates/apps/base.html:117
+#: templates/apps/base.html:178
+msgid "Services"
+msgstr ""
+
+#: templates/apps/base.html:76 templates/apps/base.html:119
+#: templates/apps/dashboard.html:210 templates/apps/partners.html:23
+#: templates/apps/partners.html:27
+msgid "Partners"
+msgstr ""
+
+#: templates/apps/base.html:77 templates/apps/base.html:120
+#: templates/apps/base.html:185 templates/apps/contact.html:12
+#: templates/apps/contact.html:16 templates/apps/dashboard.html:38
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Us"
+msgstr "Contact"
+
+#: templates/apps/base.html:116 templates/apps/base.html:172
+#, fuzzy
+#| msgid "About"
+msgid "About us"
+msgstr "About"
+
+#: templates/apps/base.html:128
+msgid "Order technique"
+msgstr ""
+
+#: templates/apps/base.html:152
 msgid ""
 "We ensure prompt delivery and installation of any medical equipment you "
 "purchase from us."
 msgstr ""
 
-#: templates/apps/base.html:167
+#: templates/apps/base.html:166
 msgid "Quick Links"
 msgstr ""
 
-#: templates/apps/base.html:190
+#: templates/apps/base.html:189
 msgid "Other Links"
 msgstr ""
 
-#: templates/apps/base.html:199
+#: templates/apps/base.html:198
 msgid "Open Hours"
 msgstr ""
 
-#: templates/apps/base.html:210
+#: templates/apps/base.html:208
 msgid "Newsletter"
 msgstr ""
 
-#: templates/apps/contact.html:39
+#: templates/apps/contact.html:43
 #, fuzzy
 #| msgid "Contact"
 msgid "Contact With Us"
 msgstr "Contact"
 
-#: templates/apps/contact.html:40
+#: templates/apps/contact.html:44
 msgid "If you have any questions please fell free to contact with us."
 msgstr ""
 
-#: templates/apps/contact.html:71
+#: templates/apps/contact.html:81
 msgid "Send"
 msgstr ""
 
-#: templates/apps/contact.html:76
-msgid "Do you want tosubscribe our Newsletter?"
+#: templates/apps/contact.html:86
+msgid "Do you want to subscribe our Newsletter?"
 msgstr ""
 
-#: templates/apps/contact.html:105
+#: templates/apps/contact.html:115
 msgid "Uzbekistan, Tashkent, Mirzo-Ulugbek dt, TTZ-4,"
 msgstr ""
 
-#: templates/apps/contact.html:106
+#: templates/apps/contact.html:116
 msgid "st. YUZRABOT, 24"
 msgstr ""
 
-#: templates/apps/contact.html:116
+#: templates/apps/contact.html:126
 msgid "Mon - Sat:"
 msgstr ""
 
-#: templates/apps/contact.html:117
+#: templates/apps/contact.html:127
 msgid "8am - 5pm"
 msgstr ""
 
-#: templates/apps/contact.html:118
+#: templates/apps/contact.html:128
 msgid "Sunday Closed"
 msgstr ""
 
-#: templates/apps/dashboard.html:19 templates/apps/dashboard.html:38
-#: templates/apps/dashboard.html:57
-msgid "Get Appointment"
+#: templates/apps/dashboard.html:15
+msgid "We <span>Sell</span> Products That Exceed Your Expectations!"
 msgstr ""
 
-#: templates/apps/dashboard.html:20 templates/apps/dashboard.html:314
+#: templates/apps/dashboard.html:16
+msgid ""
+"Discover quality and reliability with our top-notch products, designed to "
+"cater to all your needs."
+msgstr ""
+
+#: templates/apps/dashboard.html:18
+#, fuzzy
+#| msgid "Products"
+msgid "View Products"
+msgstr "Products"
+
+#: templates/apps/dashboard.html:19 templates/apps/dashboard.html:313
 msgid "Learn More"
 msgstr ""
 
-#: templates/apps/dashboard.html:58 templates/apps/dashboard.html:313
+#: templates/apps/dashboard.html:34
+msgid "We <span>Deliver</span> Excellence Right to Your Doorstep!"
+msgstr ""
+
+#: templates/apps/dashboard.html:35
+msgid ""
+"Fast, reliable delivery services ensuring your products arrive safely and on "
+"time."
+msgstr ""
+
+#: templates/apps/dashboard.html:37
+msgid "Schedule Delivery"
+msgstr ""
+
+#: templates/apps/dashboard.html:52
+msgid "We Provide <span>Services</span> You Can Rely On!"
+msgstr ""
+
+#: templates/apps/dashboard.html:53
+msgid ""
+"Comprehensive support and services to keep your products performing at their "
+"best."
+msgstr ""
+
+#: templates/apps/dashboard.html:55
+msgid "Request Service"
+msgstr ""
+
+#: templates/apps/dashboard.html:56
 #, fuzzy
 #| msgid "Contact"
-msgid "Contact Now"
+msgid "Contact Support"
 msgstr "Contact"
 
-#: templates/apps/dashboard.html:83
+#: templates/apps/dashboard.html:81
 msgid "Free services"
 msgstr ""
 
-#: templates/apps/dashboard.html:84
+#: templates/apps/dashboard.html:82
 msgid ""
 "We also have free services such as delivery and installation of our products"
 msgstr ""
 
-#: templates/apps/dashboard.html:85 templates/apps/dashboard.html:100
-#: templates/apps/dashboard.html:118
+#: templates/apps/dashboard.html:83 templates/apps/dashboard.html:98
+#: templates/apps/dashboard.html:116
 msgid "LEARN MORE"
 msgstr ""
 
-#: templates/apps/dashboard.html:98
+#: templates/apps/dashboard.html:96
 msgid "Employees Timetable"
 msgstr ""
 
-#: templates/apps/dashboard.html:99
+#: templates/apps/dashboard.html:97
 msgid ""
 "Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in "
 "convallis sodales."
 msgstr ""
 
-#: templates/apps/dashboard.html:113
+#: templates/apps/dashboard.html:111
 msgid "Opening Hours"
 msgstr ""
 
-#: templates/apps/dashboard.html:115
+#: templates/apps/dashboard.html:113
 msgid "Monday - Friday"
 msgstr ""
 
-#: templates/apps/dashboard.html:116
+#: templates/apps/dashboard.html:114
 msgid "Sunday is a day off"
 msgstr ""
 
-#: templates/apps/dashboard.html:135
+#: templates/apps/dashboard.html:133
 msgid "We Are Always Ready to Provide Our Service"
 msgstr ""
 
-#: templates/apps/dashboard.html:137
+#: templates/apps/dashboard.html:135
 msgid ""
 "Open up new horizons in medical diagnostics with our advanced radiology "
 "equipment. Improved image quality, diagnostic accuracy and innovative "
@@ -309,122 +346,128 @@ msgid ""
 "professionalism of our products for a successful medical practice."
 msgstr ""
 
-#: templates/apps/dashboard.html:148
+#: templates/apps/dashboard.html:146
 msgid "Quality of technique"
 msgstr ""
 
-#: templates/apps/dashboard.html:149
+#: templates/apps/dashboard.html:147
 msgid ""
 "Before delivery, equipment and consumables are tested for compliance with "
 "stated standards and certificates."
 msgstr ""
 
-#: templates/apps/dashboard.html:159
+#: templates/apps/dashboard.html:157
 msgid "High On-Time Delivery Rate."
 msgstr ""
 
-#: templates/apps/dashboard.html:160
+#: templates/apps/dashboard.html:158
 msgid ""
 "We have local experts on hand at all times, and our \"no excuses\" approach "
 "ensures that we are responsible for every pickup and delivery."
 msgstr ""
 
-#: templates/apps/dashboard.html:170
+#: templates/apps/dashboard.html:168
 msgid "Complex equipment"
 msgstr ""
 
-#: templates/apps/dashboard.html:171
+#: templates/apps/dashboard.html:169
 msgid ""
 "Optimized solutions for comprehensive equipment of medical facilities of any "
 "complexity and in accordance with the available budget."
 msgstr ""
 
-#: templates/apps/dashboard.html:190
+#: templates/apps/dashboard.html:188
 msgid "Branches"
 msgstr ""
 
-#: templates/apps/dashboard.html:201
+#: templates/apps/dashboard.html:199
 msgid "Specialist Employees"
 msgstr ""
 
-#: templates/apps/dashboard.html:223
+#: templates/apps/dashboard.html:221
 msgid "Years of Experience"
 msgstr ""
 
-#: templates/apps/dashboard.html:239
+#: templates/apps/dashboard.html:237
 msgid "Our Service Center"
 msgstr ""
 
-#: templates/apps/dashboard.html:241
+#: templates/apps/dashboard.html:239
 msgid "So far we have cooperated with many manufacturers all around the world"
 msgstr ""
 
-#: templates/apps/dashboard.html:249
+#: templates/apps/dashboard.html:247
 msgid "Some Information About Us"
 msgstr ""
 
-#: templates/apps/dashboard.html:250
+#: templates/apps/dashboard.html:248
 msgid ""
 "Luch Stom Interprise LLC has successfully installed 164 units of ultrasound "
 "devices supplied by Wuxi Haiying Medical Devices Co Ltd"
 msgstr ""
 
-#: templates/apps/dashboard.html:251
+#: templates/apps/dashboard.html:249
 msgid ""
 "Luch Stom Interpsie LLC has been assigned as service center for "
 "installation, repairing and maintance for ultrasound devices in the amount "
 "1200 units supplied by Mindray"
 msgstr ""
 
-#: templates/apps/dashboard.html:256
+#: templates/apps/dashboard.html:254
 msgid "Medical equipment in Tashkent, Uzbekistan"
 msgstr ""
 
-#: templates/apps/dashboard.html:259
+#: templates/apps/dashboard.html:257
 msgid "Dental equipment in Uzbekistan"
 msgstr ""
 
-#: templates/apps/dashboard.html:262
+#: templates/apps/dashboard.html:260
 msgid "Sales covers overall Republic of Uzbekistan"
 msgstr ""
 
-#: templates/apps/dashboard.html:265
+#: templates/apps/dashboard.html:263
 msgid ""
 "Sales agent present in main cities of Uzbekistan: Samarqand, Qarshi, Bukhara."
 msgstr ""
 
-#: templates/apps/dashboard.html:310
+#: templates/apps/dashboard.html:309
 msgid "Do you need any medical technique? Call +99871-261-53-08"
 msgstr ""
 
-#: templates/apps/dashboard.html:311
+#: templates/apps/dashboard.html:310
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor "
 "dictum turpis nec gravida."
 msgstr ""
 
-#: templates/apps/dashboard.html:330
+#: templates/apps/dashboard.html:312
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Now"
+msgstr "Contact"
+
+#: templates/apps/dashboard.html:329
 msgid "Our best selling products so far."
 msgstr ""
 
-#: templates/apps/dashboard.html:344
+#: templates/apps/dashboard.html:343
 msgid "View Details"
 msgstr ""
 
-#: templates/apps/dashboard.html:361
+#: templates/apps/dashboard.html:359
 msgid "Completed Projects"
 msgstr ""
 
-#: templates/apps/dashboard.html:363
+#: templates/apps/dashboard.html:361
 msgid ""
 "Participated in MoH Uzbekistan procurement projects of medical equipment"
 msgstr ""
 
-#: templates/apps/dashboard.html:364
+#: templates/apps/dashboard.html:362
 msgid "Total more than 15 contracts within last 4 years"
 msgstr ""
 
-#: templates/apps/dashboard.html:365
+#: templates/apps/dashboard.html:363
 msgid "Amount of all contracts equals to 9,134,545 USD"
 msgstr ""
 

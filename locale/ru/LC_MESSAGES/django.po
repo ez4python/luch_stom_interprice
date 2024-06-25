@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 06:31+0000\n"
-"PO-Revision-Date: 2024-06-25 06:32+0000\n"
+"POT-Creation-Date: 2024-06-25 06:50+0000\n"
+"PO-Revision-Date: 2024-06-25 07:01+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -80,7 +80,6 @@ msgid "product_description"
 msgstr "Описание продукта"
 
 #: apps/models.py:47
-#, fuzzy
 #| msgid "product_title"
 msgid "product_image"
 msgstr "Название продукта"
@@ -163,7 +162,6 @@ msgid "Partners"
 msgstr "Партнеры"
 
 #: templates/apps/base.html:77
-#| msgid "Contact Us"
 msgid "Contact_Us_header"
 msgstr "Контакты"
 
@@ -212,10 +210,9 @@ msgid "Open Hours"
 msgstr "Время работы"
 
 #: templates/apps/base.html:202 templates/apps/dashboard.html:113
-#, fuzzy
 #| msgid "Mon - Sat:"
 msgid "Monday - Saturday"
-msgstr "Пн – Сб:"
+msgstr "Пон – Суб:"
 
 #: templates/apps/base.html:202 templates/apps/dashboard.html:114
 msgid "9am-7pm"
@@ -237,19 +234,17 @@ msgstr ""
 
 #: templates/apps/base.html:213
 msgid "Email Address"
-msgstr " Электронная почта"
+msgstr "Электронная почта"
 
 #: templates/apps/contact.html:12 templates/apps/dashboard.html:38
 msgid "Contact Us"
 msgstr "Контакты"
 
 #: templates/apps/contact.html:14
-#| msgid "About_Us_footer"
 msgid "About_Us_contact"
 msgstr "О нас"
 
 #: templates/apps/contact.html:16
-#| msgid "Contact_Us_footer"
 msgid "Contact_Us_contact"
 msgstr "Контакты"
 

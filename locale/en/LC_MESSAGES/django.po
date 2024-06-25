@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 06:31+0000\n"
-"PO-Revision-Date: 2024-06-25 06:46+0000\n"
+"POT-Creation-Date: 2024-06-25 06:50+0000\n"
+"PO-Revision-Date: 2024-06-25 06:59+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -150,7 +150,6 @@ msgid "Uzbek"
 msgstr "Uzbek"
 
 #: templates/apps/base.html:73
-#| msgid "About"
 msgid "About_Us_header"
 msgstr "About Us"
 
@@ -166,17 +165,14 @@ msgid "Partners"
 msgstr "Partners"
 
 #: templates/apps/base.html:77
-#| msgid "Contact"
 msgid "Contact_Us_header"
 msgstr "Contact Us"
 
 #: templates/apps/base.html:116
-#| msgid "About"
 msgid "About_Us_inner"
 msgstr "About Us"
 
 #: templates/apps/base.html:120
-#| msgid "Contact"
 msgid "Contact_Us_inner"
 msgstr "Contact Us"
 
@@ -185,7 +181,6 @@ msgid "Order technique"
 msgstr "Order technique"
 
 #: templates/apps/base.html:151 templates/apps/partners.html:25
-#| msgid "About"
 msgid "About Us"
 msgstr "About Us"
 
@@ -202,12 +197,10 @@ msgid "Quick Links"
 msgstr "Quick Links"
 
 #: templates/apps/base.html:173
-#| msgid "About"
 msgid "About_Us_footer"
 msgstr "About Us"
 
 #: templates/apps/base.html:187
-#| msgid "Contact"
 msgid "Contact_Us_footer"
 msgstr "Contact Us"
 
@@ -244,22 +237,18 @@ msgid "Email Address"
 msgstr "Email Address"
 
 #: templates/apps/contact.html:12 templates/apps/dashboard.html:38
-#| msgid "Contact"
 msgid "Contact Us"
 msgstr "Contact Us"
 
 #: templates/apps/contact.html:14
-#| msgid "About"
 msgid "About_Us_contact"
 msgstr "About Us"
 
 #: templates/apps/contact.html:16
-#| msgid "Contact"
 msgid "Contact_Us_contact"
 msgstr "Contact Us"
 
 #: templates/apps/contact.html:43
-#| msgid "Contact"
 msgid "Contact With Us"
 msgstr "Contact With Us"
 
@@ -328,7 +317,6 @@ msgstr ""
 "cater to all your needs."
 
 #: templates/apps/dashboard.html:18
-#| msgid "Products"
 msgid "View Products"
 msgstr "View Products"
 
@@ -369,7 +357,6 @@ msgid "Request Service"
 msgstr "Request Service"
 
 #: templates/apps/dashboard.html:56
-#| msgid "Contact"
 msgid "Contact Support"
 msgstr "Contact Support"
 
@@ -526,7 +513,6 @@ msgid "Do you need any medical technique? Call +99871-261-53-08"
 msgstr "Do you need any medical technique? Call +99871-261-53-08"
 
 #: templates/apps/dashboard.html:307
-#| msgid "Contact"
 msgid "Contact Now"
 msgstr "Contact Now"
 

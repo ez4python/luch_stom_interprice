@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-24 10:44+0000\n"
+"POT-Creation-Date: 2024-06-25 06:31+0000\n"
 "PO-Revision-Date: 2024-06-08 11:52+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,8 @@ msgid "Product"
 msgstr "Mahsulot"
 
 #: apps/models.py:54 templates/apps/base.html:75 templates/apps/base.html:118
-#: templates/apps/base.html:181
+#: templates/apps/base.html:182 templates/apps/product.html:12
+#: templates/apps/product.html:16
 msgid "Products"
 msgstr "Mahsulotlar"
 
@@ -148,16 +149,14 @@ msgstr "Rus tili"
 msgid "Uzbek"
 msgstr "Uzbek tili"
 
-#: templates/apps/base.html:73 templates/apps/base.html:116
-#: templates/apps/base.html:151 templates/apps/base.html:172
-#: templates/apps/contact.html:14 templates/apps/partners.html:25
+#: templates/apps/base.html:73
 #, fuzzy
 #| msgid "About"
-msgid "About Us"
+msgid "About_Us_header"
 msgstr "Biz haqimizda"
 
 #: templates/apps/base.html:74 templates/apps/base.html:117
-#: templates/apps/base.html:178
+#: templates/apps/base.html:179
 msgid "Services"
 msgstr ""
 
@@ -167,17 +166,33 @@ msgstr ""
 msgid "Partners"
 msgstr ""
 
-#: templates/apps/base.html:77 templates/apps/base.html:120
-#: templates/apps/base.html:185 templates/apps/contact.html:12
-#: templates/apps/contact.html:16 templates/apps/dashboard.html:38
+#: templates/apps/base.html:77
 #, fuzzy
 #| msgid "Contact"
-msgid "Contact Us"
+msgid "Contact_Us_header"
+msgstr "Bog'lanish uchun"
+
+#: templates/apps/base.html:116
+#, fuzzy
+#| msgid "About"
+msgid "About_Us_inner"
+msgstr "Biz haqimizda"
+
+#: templates/apps/base.html:120
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact_Us_inner"
 msgstr "Bog'lanish uchun"
 
 #: templates/apps/base.html:128
 msgid "Order technique"
 msgstr ""
+
+#: templates/apps/base.html:151 templates/apps/partners.html:25
+#, fuzzy
+#| msgid "About"
+msgid "About Us"
+msgstr "Biz haqimizda"
 
 #: templates/apps/base.html:152
 msgid ""
@@ -189,37 +204,67 @@ msgstr ""
 msgid "Quick Links"
 msgstr ""
 
-#: templates/apps/base.html:189
+#: templates/apps/base.html:173
+#, fuzzy
+#| msgid "About"
+msgid "About_Us_footer"
+msgstr "Biz haqimizda"
+
+#: templates/apps/base.html:187
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact_Us_footer"
+msgstr "Bog'lanish uchun"
+
+#: templates/apps/base.html:191
 msgid "Other Links"
 msgstr ""
 
-#: templates/apps/base.html:198
+#: templates/apps/base.html:200
 msgid "Open Hours"
 msgstr ""
 
-#: templates/apps/base.html:200 templates/apps/dashboard.html:113
+#: templates/apps/base.html:202 templates/apps/dashboard.html:113
 msgid "Monday - Saturday"
 msgstr ""
 
-#: templates/apps/base.html:200 templates/apps/dashboard.html:114
+#: templates/apps/base.html:202 templates/apps/dashboard.html:114
 msgid "9am-7pm"
 msgstr ""
 
-#: templates/apps/base.html:201
+#: templates/apps/base.html:203
 msgid "Sunday and Holidays - days off"
 msgstr ""
 
-#: templates/apps/base.html:207
+#: templates/apps/base.html:209
 msgid "Newsletter"
 msgstr ""
 
-#: templates/apps/base.html:208
+#: templates/apps/base.html:210
 msgid "Subscribe to our newsletter to get all our news in your inbox."
 msgstr ""
 
-#: templates/apps/base.html:211
+#: templates/apps/base.html:213
 msgid "Email Address"
 msgstr ""
+
+#: templates/apps/contact.html:12 templates/apps/dashboard.html:38
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Us"
+msgstr "Bog'lanish uchun"
+
+#: templates/apps/contact.html:14
+#, fuzzy
+#| msgid "About"
+msgid "About_Us_contact"
+msgstr "Biz haqimizda"
+
+#: templates/apps/contact.html:16
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact_Us_contact"
+msgstr "Bog'lanish uchun"
 
 #: templates/apps/contact.html:43
 #, fuzzy
@@ -229,6 +274,10 @@ msgstr "Bog'lanish uchun"
 
 #: templates/apps/contact.html:44
 msgid "If you have any questions please fell free to contact with us."
+msgstr ""
+
+#: templates/apps/contact.html:51
+msgid "Name"
 msgstr ""
 
 #: templates/apps/contact.html:57
@@ -542,6 +591,10 @@ msgstr ""
 
 #: templates/apps/dashboard.html:409
 msgid "Sum of the contract 240 000 USD."
+msgstr ""
+
+#: templates/apps/product.html:14
+msgid "Home"
 msgstr ""
 
 #, fuzzy

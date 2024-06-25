@@ -1,192 +1,304 @@
 input {
-  border: none;
+    border: none;
 }
 
 .section_header {
-  margin-top: 30px;
-  margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 .section_div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .section_title {
-  color: rgb(0, 183, 255);
+    color: rgb(0, 183, 255);
 }
 
 .section_search {
-  height: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  border-radius: 5px;
-  outline: none;
-  column-gap: 10px;
-  /* border: 1px solid #333 ; */
-  padding: 5px 8px;
-  box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.05),
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    column-gap: 10px;
+    /* border: 1px solid #333 ; */
+    padding: 5px 8px;
+    box-shadow: 0px -8px 15px rgba(0, 0, 0, 0.05),
     0px 8px 28px -6px rgba(103, 103, 103, 0.1),
     0px 18px 88px -4px rgba(103, 103, 103, 0.1);
 }
 
 .section_search-img {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .section_search-input {
-  width: 200px;
-  height: 20px;
-  border: 1px solid white;
-  border-radius: 5px;
-  outline: none;
+    width: 200px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
 }
 
 .section_medik {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .section_medik-title {
-  color: #2c3e9a;
+    color: #2c3e9a;
+}
+
+.section_medik-show {
+    position: relative;
+    display: flex;
+    max-width: 1240px;
+    width: 100%;
+    column-gap: 30px;
+    margin-top: 30px;
 }
 
 .section_medik-left {
-  margin-top: 30px;
-  width: 300px;
-  display: flex;
-  gap: 20px;
+    width: 260px;
+    display: flex;
+    position: absolute;
+    /* flex-direction: column; */
+    /* gap: 20px; */
 }
 
 .section_medik-chass {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 8px 28px -6px rgba(103, 103, 103, 0.1),
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 28px -6px rgba(103, 103, 103, 0.1),
     0px 18px 88px -4px rgba(103, 103, 103, 0.1);
-  border-radius: 20px;
+    border-radius: 20px;
 }
 
 .section_medik-info {
-  padding: 15px 50px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  font-family: "OpenSans-SemiBold", sans-serif;
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    font-family: "OpenSans-SemiBold", sans-serif;
 }
 
 .puff:hover {
-  border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
 }
+
 .puff1:hover {
-  border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .puff_title {
-  color: #575555;
+    color: #575555;
 }
 
 .section_medik-info:hover {
-  color: #0a5f91;
-  background: #8ed2fc9f;
+    color: #0a5f91;
+    background: #8ed2fc9f;
 }
 
-.section_medik-right{
-  display: flex;
-  max-width: 945px;
-  width: 100%;
-  height: 100%;
-  /*justify-content: space-between;*/
-  gap: 20px;
-  flex-direction: row;
-  /*flex-wrap: wrap;*/
-  flex-grow: 3;
-  unicode-bidi: isolate;
-  /*grid-column:(3,275px);*/
+.section_medik-right {
+    /*display: inline-flex;*/
+    /*width: 1240px;*/
+    /*gap: 15px;*/
+    /*margin-left: 280px;*/
+    /*flex-wrap: wrap;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    display: grid;
+    width: 1240px;
+    gap: 15px;
+    margin-left: 280px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 span {
-  font-family: "OpenSans-SemiBold", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 150%;
+    font-family: "OpenSans-SemiBold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 .section_medik-fuut {
-  width: 275px;
-  height: 370px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 275px;
+    height: 370px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
 }
 
 .product_card {
-  width: 275px;
-  height: 370px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  row-gap: 15px;
-  box-shadow: 0px 8px 28px -6px rgba(103, 103, 103, 0.1),
+    width: 275px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    row-gap: 15px;
+    box-shadow: 0px 8px 28px -6px rgba(103, 103, 103, 0.1),
     0px 18px 88px -4px rgba(103, 103, 103, 0.1);
 }
 
 .product_card-img {
-  text-align: center;
-  overflow-clip-margin: content-box;
-  /* overflow: hayden; */
-  overflow: hidden;
-  width: 280px;
-  height: 280px;
-  -o-object-fit: contain;
-  object-fit: contain;
-  -webkit-border-radius: 15px 15px 0 0;
-  border-radius: 15px 15px 0 0;
-   -webkit-transition: all 0.3s ease-in-out;
-  box-sizing: border-box;
-  transform: scale(0.9);
+    text-align: center;
+    overflow-clip-margin: content-box;
+    /* overflow: hayden; */
+    overflow: hidden;
+    width: 280px;
+    height: 280px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
+    /* -webkit-transition: all 0.3s ease-in-out; */
+    box-sizing: border-box;
+    transform: scale(0.9);
 }
 
-.product_card-img:hover{
-  transform: scale(1);
-  overflow: hidden;
+.product_card-img:hover {
+    transform: scale(1);
+    overflow: hidden;
 }
 
 .text {
-  font-family: "OpenSans-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  color: #ffffff;
-  background: #2c3e9a;
-  padding: 8px 15px;
-  -webkit-border-radius: 0 0 15px 15px;
-  border-radius: 0 0 15px 15px;
-  min-height: 80px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  z-index: 2;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+    background: #2c3e9a;
+    padding: 8px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
+    min-height: 80px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 2;
 }
 
+@media (max-width: 620px) {
+    .section_medik-show {
+        display: flex;
+        flex-direction: column;
 
-@media ( max-width:1920px ){
+    }
 
+    .section_medik-left {
+        width: 500px;
+        display: flex;
+    }
+
+    .section_medik-show {
+        /* position: relative; */
+        display: flex;
+        /* flex-direction: column; */
+        max-width: 600px;
+        width: 100%;
+        /* column-gap: 30px; */
+        margin-top: 30px;
+    }
+
+    .section_medik-right {
+        width: 400px;
+        display: block;
+        margin-left: 60px;
+        margin-top: 550px;
+    }
+
+    .section_medik-fuut {
+        margin-top: 30px;
+    }
+
+    .section_search-input {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .section_medik-show {
+        display: flex;
+
+    }
+
+    .section_medik-left {
+        width: 350px;
+        display: flex;
+    }
+
+    .section_medik-show {
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        max-width: 480px;
+        width: 100%;
+        /* column-gap: 30px; */
+        margin-top: 30px;
+    }
+
+    .section_medik-right {
+        width: 400px;
+        display: block;
+        margin-left: -10px;
+        margin-top: 550px;
+    }
+
+    .section_medik-fuut {
+        margin-top: 30px;
+        width: 400px;
+    }
+
+    .section_search-input {
+        display: none;
+    }
+}
+
+.run {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.run_link {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+    font-size: 18px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.active1 {
+    display: flex;
 }

@@ -302,3 +302,39 @@ span {
 .active1 {
     display: flex;
 }
+
+
+.search_card {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust as needed */
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search_card button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.search_card img {
+    width: 20px;
+    height: 20px;
+}
+
+.search_card input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    background: none;
+}
+
+.search_card input::placeholder {
+    color: #aaa;
+}

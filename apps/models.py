@@ -38,6 +38,9 @@ class Category(TranslatableModel):
     def __str__(self):
         return self.name
 
+    def count_product(self):
+        return self.product_set.count()
+
 
 class Product(TranslatableModel, BaseDateTimeModel):
     translations = TranslatedFields(
@@ -60,9 +63,9 @@ class Product(TranslatableModel, BaseDateTimeModel):
         is_new_instance = self.pk is None
         super().save(force_insert, force_update, using, update_fields)
 
-        if is_new_instance:
-            all_emails = list(NewsReceiver.objects.values_list('email', flat=True))
-            task_send_email.delay('LUCH STOM INTERPRISE', self.title, all_emails)
+        # if is_new_instance:
+        #     all_emails = list(NewsReceiver.objects.values_list('email', flat=True))
+        #     task_send_email.delay('LUCH STOM INTERPRISE', self.title, all_emails)
 
 
 class NewsReceiver(BaseDateTimeModel):

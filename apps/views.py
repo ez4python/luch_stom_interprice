@@ -1,9 +1,9 @@
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView, CreateView, ListView, FormView
+from django.views.generic import TemplateView, CreateView, ListView, FormView, DetailView
 
 from apps.forms import EmailForm, ContactForm
-from apps.models import Product, NewsReceiver
+from apps.models import Product, NewsReceiver, Category
 from apps.tasks import task_contact_with
 from root.settings import DEFAULT_RECIPIENT
 
@@ -15,10 +15,6 @@ class DashboardView(ListView):
 
 class ContactView(TemplateView):
     template_name = 'apps/contact.html'
-
-
-class ProductsView(TemplateView):
-    template_name = 'apps/product.html'
 
 
 class PartnersView(TemplateView):
@@ -56,3 +52,25 @@ class ContactFormView(FormView):
         if not NewsReceiver.objects.filter(email=sender).exists():
             NewsReceiver.objects.create(email=sender)
         return super().form_valid(form)
+
+
+class ProductsListView(ListView):
+    template_name = 'apps/products_list.html'
+    queryset = Product.objects.order_by('-id')
+    context_object_name = 'products'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        response = super().get_context_data(object_list=object_list, **kwargs)
+        response['all_products_amount'] = Product.objects.count()
+        response['categories'] = []
+        for category in Category.objects.all():
+            response['categories'].append({
+                'name': category.name,
+                'amount': category.count_product()
+            })
+        return response
+
+
+class ProductCategoryListView(DetailView):
+    template_name = 'apps/products_list.html'
+    queryset = Product.objects.order_by('-id')

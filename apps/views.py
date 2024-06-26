@@ -1,6 +1,6 @@
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView, CreateView, ListView, FormView
+from django.views.generic import TemplateView, CreateView, ListView, FormView, DetailView
 
 from apps.forms import EmailForm, ContactForm
 from apps.models import Product, NewsReceiver
@@ -56,3 +56,7 @@ class ContactFormView(FormView):
         if not NewsReceiver.objects.filter(email=sender).exists():
             NewsReceiver.objects.create(email=sender)
         return super().form_valid(form)
+
+
+class ProductDetailView(TemplateView):
+    template_name = 'apps/product_detail.html'

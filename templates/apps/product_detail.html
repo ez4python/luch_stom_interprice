@@ -1,0 +1,146 @@
+{% extends 'apps/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block main_content %}
+    <style>
+        .complex-single {
+            margin-bottom: 100px;
+            margin-top: 100px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .complex-single__flex {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .complex-single__flex-left {
+            width: -webkit-calc(100% - 439px);
+            width: calc(100% - 439px);
+            padding-right: 41px;
+        }
+
+        .complex-single__flex-right {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            width: 439px;
+        }
+
+        .demo .lSSlideWrapper {
+            transform: translate(0px, 0px);
+        }
+
+        .lSSlideWrapper {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        [data-aos^=fade][data-aos^=fade].aos-animate {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+
+        [data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+            transition-timing-function: ease;
+        }
+
+        [data-aos][data-aos][data-aos-duration="1500"], body[data-aos-duration="1500"] [data-aos] {
+            transition-duration: 1.5s;
+        }
+
+        [data-aos^=fade][data-aos^=fade] {
+            opacity: 0;
+            transition-property: opacity, transform;
+        }
+
+        .complex-single h3 {
+            text-align: left;
+            margin-bottom: 50px;
+            color: #2c3e9a;
+        }
+
+        [data-aos=fade-up] {
+            transform: translate3d(0, 100px, 0);
+        }
+
+        h3 {
+            font-family: "ObjectSans-Heavy", sans-serif;
+            font-size: 30px;
+            line-height: 150%;
+        }
+
+        .wysiwyg h2 {
+            font-family: "OpenSans-Bold";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 150%;
+            color: #2c3e9a;
+            margin-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'product.css' %}">
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{% trans 'Products' %}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'base_dashboard_view' %}">{% trans 'Home' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">{% trans 'Products' %}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="complex-single container">
+        <h3 style="margin-bottom: 17px;margin-top: 50px" data-aos="fade-up" class="aos-init aos-animate">Морцеллятор
+            Гинекологический</h3>
+        <div class="complex-single__flex">
+            <div class="complex-single__flex-left wysiwyg">
+                <h2>Описание</h2>
+                <p><strong>Производитель: NOUVAG, Швейцария</strong>
+                    <br><br>
+                    Nouvag TCM3000BL — это новый морцеллятор с интуитивным дизайном панели управления. Регулировка
+                    скорости и направления вращения лезвия, а также другие параметры отображаются на контрастном
+                    дисплее.</p>
+                <br>
+                <br>
+            </div>
+            <div class="complex-single__flex-right">
+                <div class="card_product_img">
+                    <div class="product_imgs">
+                        <div class="demo demo3">
+                            <div class="lSSlideOuter noPager">
+                                <div class="lSSlideWrapper usingCss">
+                                    <ul id="lightSlider" class="lightSlider lsGrab lSSlide"
+                                        style="width: 439px; transform: translate3d(0px, 0px, 0px); height: 374px; padding-bottom: 0%;">
+                                        <li data-thumb="https://endo.uz/wp-content/uploads/2023/12/7.png"
+                                            class="lslide active" style="width: 439px; margin-right: 0px;">
+                                            <img src="https://endo.uz/wp-content/uploads/2023/12/7.png">
+                                        </li>
+                                    </ul>
+                                    <div class="lSAction" style="display: none;"><a class="lSPrev"></a><a
+                                            class="lSNext"></a></div>
+                                </div>
+                                <ul class="lSPager lSGallery"
+                                    style="margin-top: 5px; transition-duration: 400ms; width: 111.5px; transform: translate3d(0px, 0px, 0px);"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

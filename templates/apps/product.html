@@ -9,11 +9,13 @@
             <div class="bread-inner">
                 <div class="row">
                     <div class="col-12">
-                        <h2>{% trans 'Products' %}</h2>
+                        <h2>{% trans 'Product detail' %}</h2>
                         <ul class="bread-list">
                             <li><a href="{% url 'base_dashboard_view' %}">{% trans 'Home' %}</a></li>
                             <li><i class="icofont-simple-right"></i></li>
                             <li class="active">{% trans 'Products' %}</li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">{% trans 'Product detail' %}</li>
                         </ul>
                     </div>
                 </div>
@@ -89,8 +91,8 @@
                         </div>
                     </div>
                     <div class="section_medik-right">
-                        <div class="section_medik-fuut row">
-                            <a href="https://endo.uz/products/763/" class="product_card">
+                        <div class="section_medik-fuut">
+                            <a href="{% url 'products_detail_view' %}" class="product_card">
                                 <img class="product_card-img" src="https://endo.uz/wp-content/uploads/2023/12/7.png"
                                      alt="">
                                 <p class="text">Морцеллятор Гинекологический</p>

@@ -59,6 +59,9 @@ class Product(TranslatableModel, BaseDateTimeModel):
     def __str__(self):
         return self.title
 
+    def count_product(self):
+        return self.product_set.count()
+
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
         is_new_instance = self.pk is None
         super().save(force_insert, force_update, using, update_fields)

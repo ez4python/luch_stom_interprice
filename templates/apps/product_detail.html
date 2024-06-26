@@ -104,16 +104,13 @@
         </div>
     </div>
     <section class="complex-single container">
-        <h3 style="margin-bottom: 17px;margin-top: 50px" data-aos="fade-up" class="aos-init aos-animate">Морцеллятор
-            Гинекологический</h3>
+        <h3 style="margin-bottom: 17px;margin-top: 50px" data-aos="fade-up" class="aos-init aos-animate">{{ product.title }}</h3>
         <div class="complex-single__flex">
             <div class="complex-single__flex-left wysiwyg">
-                <h2>Описание</h2>
-                <p><strong>Производитель: NOUVAG, Швейцария</strong>
-                    <br><br>
-                    Nouvag TCM3000BL — это новый морцеллятор с интуитивным дизайном панели управления. Регулировка
-                    скорости и направления вращения лезвия, а также другие параметры отображаются на контрастном
-                    дисплее.</p>
+                <h2>{% trans 'Описание' %}</h2>
+                <p>
+                    {{ product.description | safe }}
+                </p>
                 <br>
                 <br>
             </div>
@@ -126,8 +123,8 @@
                                     <ul id="lightSlider" class="lightSlider lsGrab lSSlide"
                                         style="width: 439px; transform: translate3d(0px, 0px, 0px); height: 374px; padding-bottom: 0%;">
                                         <li data-thumb="https://endo.uz/wp-content/uploads/2023/12/7.png"
-                                            class="lslide active" style="width: 439px; margin-right: 0px;">
-                                            <img src="https://endo.uz/wp-content/uploads/2023/12/7.png">
+                                            class="lslide active">
+                                            <img src="{{ product.image.url }}">
                                         </li>
                                     </ul>
                                     <div class="lSAction" style="display: none;"><a class="lSPrev"></a><a

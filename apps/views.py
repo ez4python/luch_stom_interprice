@@ -1,4 +1,4 @@
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView, ListView, FormView, DetailView
 
@@ -6,6 +6,7 @@ from apps.forms import EmailForm, ContactForm
 from apps.models import Product, NewsReceiver
 from apps.tasks import task_contact_with
 from root.settings import DEFAULT_RECIPIENT
+from apps.models import Category
 
 
 class DashboardView(ListView):
@@ -17,8 +18,30 @@ class ContactView(TemplateView):
     template_name = 'apps/contact.html'
 
 
-class ProductsView(TemplateView):
+class ProductsListView(ListView):
+    queryset = Product.objects.order_by('-id')
     template_name = 'apps/product.html'
+    context_object_name = 'products'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['all_products_amount'] = Product.objects.count()
+        context['categories'] = [
+            {
+                'pk': category.pk,
+                'name': category.name,
+                'amount': category.count_product(),
+            } for category in Category.objects.all()
+        ]
+
+        return context
+
+    def get_queryset(self):
+        category_id = self.request.GET.get('category')
+        queryset = super().get_queryset()
+        if category_id:
+            queryset = queryset.filter(category_id=category_id)
+        return queryset
 
 
 class PartnersView(TemplateView):
@@ -58,5 +81,12 @@ class ContactFormView(FormView):
         return super().form_valid(form)
 
 
-class ProductDetailView(TemplateView):
+class ProductDetailView(DetailView):
+    model = Product
     template_name = 'apps/product_detail.html'
+    context_object_name = 'product'
+
+    def get_object(self, queryset=None):
+        pk = self.kwargs.get(self.pk_url_kwarg)
+        product = get_object_or_404(Product.objects.all(), pk=pk)
+        return product

@@ -59,18 +59,22 @@ class ProductsListView(ListView):
     queryset = Product.objects.order_by('-id')
     context_object_name = 'products'
 
+    def get_queryset(self):
+        category_id = self.request.GET.get('category')
+        queryset = super().get_queryset()
+        if category_id:
+            queryset = queryset.filter(category_id=category_id)
+        return queryset
+
     def get_context_data(self, *, object_list=None, **kwargs):
-        response = super().get_context_data(object_list=object_list, **kwargs)
-        response['all_products_amount'] = Product.objects.count()
-        response['categories'] = []
-        for category in Category.objects.all():
-            response['categories'].append({
+        context = super().get_context_data(object_list=object_list, **kwargs)
+        context['all_products_amount'] = Product.objects.count()
+        context['is_all_categories'] = True
+        context['categories'] = [
+            {
+                'pk': category.pk,
                 'name': category.name,
                 'amount': category.count_product()
-            })
-        return response
-
-
-class ProductCategoryListView(DetailView):
-    template_name = 'apps/products_list.html'
-    queryset = Product.objects.order_by('-id')
+            } for category in Category.objects.all()
+        ]
+        return context

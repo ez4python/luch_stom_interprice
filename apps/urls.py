@@ -9,5 +9,5 @@ urlpatterns = [
     path('sign/', SignForNewsCreateView.as_view(), name='sign_for_news_view'),
     path('partners/', PartnersView.as_view(), name='partners_view'),
     path('contact-with-us/', ContactFormView.as_view(), name='contact_with_us_view'),
-    path('products/', ProductsListView.as_view(), name='products_view')
+    path('products/', ProductsListView.as_view(), name='products_view'),
 ]

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from apps.views import DashboardView, ContactView, SignForNewsCreateView, PartnersView, ContactFormView,ProductsView
+from apps.views import DashboardView, ContactView, SignForNewsCreateView, PartnersView, ContactFormView, ProductsView
 
 urlpatterns = [
     path('', DashboardView.as_view(), name='base_dashboard_view'),
@@ -8,5 +8,5 @@ urlpatterns = [
     path('sign/', SignForNewsCreateView.as_view(), name='sign_for_news_view'),
     path('partners/', PartnersView.as_view(), name='partners_view'),
     path('contact-with-us/', ContactFormView.as_view(), name='contact_with_us_view'),
-    path('product/', ProductsView.as_view(), name='product')
+    path('products/', ProductsView.as_view(), name='products_view')
 ]

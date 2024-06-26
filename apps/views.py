@@ -78,5 +78,7 @@ class ProductsListView(ListView):
             } for category in Category.objects.all()
         ]
         return context
+
+
 class ProductDetailView(TemplateView):
     template_name = 'apps/product_detail.html'

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 06:50+0000\n"
-"PO-Revision-Date: 2024-06-25 07:01+0000\n"
+"POT-Creation-Date: 2024-06-25 07:13+0000\n"
+"PO-Revision-Date: 2024-06-25 07:14+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -80,7 +80,6 @@ msgid "product_description"
 msgstr "Описание продукта"
 
 #: apps/models.py:47
-#| msgid "product_title"
 msgid "product_image"
 msgstr "Название продукта"
 
@@ -210,7 +209,6 @@ msgid "Open Hours"
 msgstr "Время работы"
 
 #: templates/apps/base.html:202 templates/apps/dashboard.html:113
-#| msgid "Mon - Sat:"
 msgid "Monday - Saturday"
 msgstr "Пон – Суб:"
 

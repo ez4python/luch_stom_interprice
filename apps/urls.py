@@ -10,5 +10,5 @@ urlpatterns = [
     path('partners/', PartnersView.as_view(), name='partners_view'),
     path('contact-with-us/', ContactFormView.as_view(), name='contact_with_us_view'),
     path('products/', ProductsListView.as_view(), name='products_view'),
-    path('product_detail/<int:pk>', ProductDetailView.as_view(), name='products_detail_view'),
+    path('product/<int:pk>', ProductDetailView.as_view(), name='product_detail_view'),
 ]

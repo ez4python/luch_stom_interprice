@@ -10,7 +10,7 @@ from root.settings import DEFAULT_RECIPIENT
 
 class DashboardView(ListView):
     template_name = 'apps/dashboard.html'
-    queryset = Product.objects.order_by('-id')
+    queryset = Product.objects.order_by('-id')[:5]
 
 
 class ContactView(TemplateView):
@@ -80,5 +80,7 @@ class ProductsListView(ListView):
         return context
 
 
-class ProductDetailView(TemplateView):
+class ProductDetailView(DetailView):
     template_name = 'apps/product_detail.html'
+    queryset = Product.objects.all()
+    context_object_name = 'product'

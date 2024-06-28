@@ -13,7 +13,7 @@
                         <ul class="bread-list">
                             <li><a href="{% url 'base_dashboard_view' %}">{% trans 'Home' %}</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">{% trans 'Products' %}</li>
+                            <li class="active"><a href="{% url 'products_view' %}">{% trans 'Products' %}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                     <div class="section_medik-right">
                         {% for product in products %}
                             <div class="section_medik-fuut">
-                                <a href="https://endo.uz/products/763/" class="product_card">
+                                <a href="{% url 'product_detail_view' product.pk %}" class="product_card">
                                     <img class="product_card-img" src="{{ product.image.url }}" alt="">
                                     <p class="text">{{ product.title }}</p>
                                 </a>

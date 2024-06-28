@@ -92,11 +92,17 @@
             <div class="bread-inner">
                 <div class="row">
                     <div class="col-12">
-                        <h2>{% trans 'Products' %}</h2>
+                        <h2>
+                            <a href="{% url 'products_view' %}?category={{ product.category.pk }}">{{ product.category.name }}</a>
+                        </h2>
                         <ul class="bread-list">
                             <li><a href="{% url 'base_dashboard_view' %}">{% trans 'Home' %}</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">{% trans 'Products' %}</li>
+                            <li class="active"><a href="{% url 'products_view' %}">{% trans 'Products' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active"><a
+                                    href="{% url 'products_view' %}?category={{ product.category.pk }}">{{ product.category.name }}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -104,13 +110,12 @@
         </div>
     </div>
     <section class="complex-single container">
-        <h3 style="margin-bottom: 17px;margin-top: 50px" data-aos="fade-up" class="aos-init aos-animate">{{ product.title }}</h3>
+        <h3 style="margin-bottom: 17px;margin-top: 50px" data-aos="fade-up"
+            class="aos-init aos-animate">{{ product.title }}</h3>
         <div class="complex-single__flex">
             <div class="complex-single__flex-left wysiwyg">
-                <h2>{% trans 'Описание' %}</h2>
-                <p>
-                    {{ product.description | safe }}
-                </p>
+                <h2>{% trans 'Description' %}</h2>
+                <p>{{ product.description | safe }}</p>
                 <br>
                 <br>
             </div>
@@ -122,7 +127,7 @@
                                 <div class="lSSlideWrapper usingCss">
                                     <ul id="lightSlider" class="lightSlider lsGrab lSSlide"
                                         style="width: 439px; transform: translate3d(0px, 0px, 0px); height: 374px; padding-bottom: 0%;">
-                                        <li data-thumb="https://endo.uz/wp-content/uploads/2023/12/7.png"
+                                        <li data-thumb="{{ product.image.url }}"
                                             class="lslide active">
                                             <img src="{{ product.image.url }}">
                                         </li>

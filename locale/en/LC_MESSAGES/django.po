@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 12:37+0000\n"
+"POT-Creation-Date: 2024-06-30 19:12+0000\n"
 "PO-Revision-Date: 2024-06-25 06:59+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,8 +103,8 @@ msgstr "Product"
 
 #: apps/models.py:57 templates/apps/base.html:75 templates/apps/base.html:118
 #: templates/apps/base.html:182 templates/apps/product.html:16
-#: templates/apps/product_detail.html:95 templates/apps/product_detail.html:99
-#: templates/apps/products_list.html:12 templates/apps/products_list.html:16
+#: templates/apps/product_detail.html:99 templates/apps/products_list.html:12
+#: templates/apps/products_list.html:16
 msgid "Products"
 msgstr "Products"
 
@@ -138,15 +138,15 @@ msgstr "New"
 msgid "News"
 msgstr "News"
 
-#: root/settings.py:88
+#: root/settings.py:92
 msgid "English"
 msgstr "English"
 
-#: root/settings.py:89
+#: root/settings.py:93
 msgid "Russian"
 msgstr "Russian"
 
-#: root/settings.py:90
+#: root/settings.py:94
 msgid "Uzbek"
 msgstr "Uzbek"
 
@@ -592,7 +592,7 @@ msgstr "Product"
 msgid "Home"
 msgstr "About Us"
 
-#: templates/apps/product_detail.html:111
+#: templates/apps/product_detail.html:113
 #, fuzzy
 #| msgid "product_description"
 msgid "Description"

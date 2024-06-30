@@ -1,4 +1,4 @@
-from django.shortcuts import redirect, get_object_or_404
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView, ListView, FormView, DetailView
 
@@ -10,7 +10,7 @@ from root.settings import DEFAULT_RECIPIENT
 
 class DashboardView(ListView):
     template_name = 'apps/dashboard.html'
-    queryset = Product.objects.order_by('-id')
+    queryset = Product.objects.order_by('-id')[:5]
 
 
 class ContactView(TemplateView):
@@ -32,7 +32,7 @@ class SignForNewsCreateView(CreateView):
         return super().form_valid(form)
 
     def form_invalid(self, form):
-        return redirect('.  ', {'form': form})
+        return redirect('.', {'form': form})
 
 
 class ContactFormView(FormView):

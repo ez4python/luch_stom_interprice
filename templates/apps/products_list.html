@@ -13,7 +13,7 @@
                         <ul class="bread-list">
                             <li><a href="{% url 'base_dashboard_view' %}">{% trans 'Home' %}</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">{% trans 'Products' %}</li>
+                            <li class="active"><a href="{% url 'products_view' %}">{% trans 'Products' %}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -47,13 +47,13 @@
                     <div class="section_medik-left">
                         <div class="section_medik-chass">
                             <a class="section_medik-info puff" href="{% url 'products_view' %}">
-                                <span class="puff_title" style="margin-right: 30px">{% trans 'All' %}</span>
+                                <span class="puff_title">{% trans 'All' %}</span>
                                 <span>{{ all_products_amount }}</span>
                             </a>
                             {% for category in categories %}
                                 <a class="section_medik-info"
                                    href="{% url 'products_view' %}?category={{ category.pk }}">
-                                    <span class="puff_title" style="margin-right: 30px">{{ category.name }}</span>
+                                    <span class="puff_title">{{ category.name }}</span>
                                     <span>{{ category.amount }}</span>
                                 </a>
                             {% endfor %}
@@ -62,7 +62,7 @@
                     <div class="section_medik-right">
                         {% for product in products %}
                             <div class="section_medik-fuut">
-                                <a href="{% url 'products_detail_view' product.pk %}" class="product_card">
+                                <a href="{% url 'product_detail_view' product.pk %}" class="product_card">
                                     <img class="product_card-img" src="{{ product.image.url }}" alt="">
                                     <p class="text">{{ product.title }}</p>
                                 </a>

@@ -21,6 +21,7 @@ kombu==5.3.7
 pillow==10.3.0
 polib==1.2.0
 prompt_toolkit==3.0.47
+psycopg2-binary==2.9.9
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 redis==5.0.6

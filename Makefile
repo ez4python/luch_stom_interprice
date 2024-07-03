@@ -11,3 +11,6 @@ language:
 
 celery:
 	celery -A root worker --loglevel=info
+
+run:
+	docker start pg_data luch_redis

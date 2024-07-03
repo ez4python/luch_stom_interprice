@@ -1,4 +1,4 @@
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView, ListView, FormView, DetailView
 
@@ -82,5 +82,10 @@ class ProductsListView(ListView):
 
 class ProductDetailView(DetailView):
     template_name = 'apps/product_detail.html'
-    queryset = Product.objects.all()
+    model = Product
     context_object_name = 'product'
+
+    def get_object(self, queryset=None):
+        pk = self.kwargs.get(self.pk_url_kwarg)
+        product = get_object_or_404(Product.objects.all(), pk=pk)
+        return product

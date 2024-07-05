@@ -16,8 +16,10 @@ django-jazzmin==3.0.0
 django-parler==2.3
 django-resized==1.0.2
 django-rosetta==0.10.0
+gunicorn==22.0.0
 idna==3.7
 kombu==5.3.7
+packaging==24.1
 pillow==10.3.0
 polib==1.2.0
 prompt_toolkit==3.0.47

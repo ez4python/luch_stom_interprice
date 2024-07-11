@@ -51,6 +51,9 @@ class Country(TranslatableModel):
         verbose_name = _('Country')
         verbose_name_plural = _('Countries')
 
+    def __str__(self):
+        return self.name
+
 
 class Product(TranslatableModel, BaseDateTimeModel):
     translations = TranslatedFields(

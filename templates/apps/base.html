@@ -41,6 +41,7 @@
     <!-- Medipro CSS -->
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'language.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 </head>
 <body>
@@ -118,8 +119,18 @@
                                     <li><a href="{% url 'products_view' %}">{% trans 'Products' %}</a></li>
                                     <li><a href="{% url 'partners_view' %}">{% trans 'Partners' %}</a></li>
                                     <li><a href="{% url 'contact_view' %}">{% trans 'Contact_Us_inner' %}</a></li>
+                                    <li>
+                                        <div style="padding-top: 18px;">
+                                            <select id="languageSelector" style="color:black;" class="language-selector"
+                                                    onchange="changeLanguage(this)">
+                                                <option value="uz" data-icon="🇺🇿">🇺🇿 Uz</option>
+                                                <option value="en" selected data-icon="🇬🇧">🇬🇧 En</option>
+                                                <option value="ru" data-icon="🇷🇺">🇷🇺 Ru</option>
+                                            </select>
+                                        </div>
+                                    </li>
                                 </ul>
-                                
+
                             </nav>
                         </div>
                         <!--/ End Main Menu -->
@@ -237,6 +248,36 @@
     <!--/ End Copyright -->
 </footer>
 <!--/ End Footer Area -->
+<script>
+    // Function to change the language and update the selected text
+    function changeLanguage(select) {
+        var baseUrl = window.location.protocol + '//' + window.location.host;
+        var languageCode = select.value;
+        var url = baseUrl + '/' + languageCode + '/';
+
+        // Save the selected language text in sessionStorage
+        var selectedText = select.options[select.selectedIndex].text;
+        sessionStorage.setItem('selectedLanguage', selectedText);
+
+        // Redirect to the new URL
+        window.location.href = url;
+    }
+
+    // Set the initial selected text from sessionStorage
+    document.addEventListener('DOMContentLoaded', function () {
+        var selectedText = sessionStorage.getItem('selectedLanguage');
+        if (selectedText) {
+            var selectElement = document.getElementById('languageSelector');
+            // Loop through options to find and update the selected option text
+            for (var i = 0; i < selectElement.options.length; i++) {
+                if (selectElement.options[i].text === selectedText) {
+                    selectElement.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    });
+</script>
 
 <!-- jquery Min JS -->
 <script src="{% static 'js/jquery.min.js' %}"></script>
@@ -284,5 +325,6 @@
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <!-- Main JS -->
 <script src="{% static 'js/main.js' %}"></script>
+{#<script src="{% static 'language.js' %}"></script>#}
 </body>
 </html>

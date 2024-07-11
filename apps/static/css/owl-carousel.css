@@ -115,13 +115,14 @@
 .owl-carousel .owl-stage {
   position: relative;
   -ms-touch-action: pan-Y;
+  line-height: 1.2;
 }
 .owl-carousel .owl-stage:after {
   content: ".";
   display: block;
   clear: both;
   visibility: hidden;
-  line-height: 0;
+  line-height: 1.2;
   height: 0;
 }
 .owl-carousel .owl-stage-outer {
@@ -168,7 +169,7 @@
 }
 .owl-carousel .owl-item img {
   display: block;
-  width: 100%;
+  width: 90%;
   -webkit-transform-style: preserve-3d;
 }
 .owl-carousel.owl-text-select-on .owl-item {

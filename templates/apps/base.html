@@ -13,7 +13,7 @@
     <title>LSI - Luch Stom Interprise</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{% static 'img/favicon.png' %}">
+    <link rel="icon" href="{% static 'img/logo.png' %}">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
@@ -73,7 +73,7 @@
                     <ul class="top-link">
                         <li><a href="{% url 'base_dashboard_view' %}">{% trans 'About_Us_header' %}</a></li>
                         <li><a href="#">{% trans 'Services' %}</a></li>
-                        <li><a href="#">{% trans 'Products' %}</a></li>
+                        <li><a href="{% url 'products_view' %}">{% trans 'Products' %}</a></li>
                         <li><a href="{% url 'partners_view' %}">{% trans 'Partners' %}</a></li>
                         <li><a href="{% url 'contact_view' %}">{% trans 'Contact_Us_header' %}</a></li>
                     </ul>

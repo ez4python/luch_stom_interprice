@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-30 19:12+0000\n"
+"POT-Creation-Date: 2024-07-16 15:49+0000\n"
 "PO-Revision-Date: 2024-06-25 06:59+0000\n"
 "Last-Translator: Akbarali Salohiddinov <a.salohiddinov@tuit.uz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,120 +72,142 @@ msgid "Categories"
 msgstr "Categories"
 
 #: apps/models.py:47
+#, fuzzy
+#| msgid "category_name"
+msgid "country_name"
+msgstr "Name of category"
+
+#: apps/models.py:51
+msgid "Country"
+msgstr ""
+
+#: apps/models.py:52
+#, fuzzy
+#| msgid "Categories"
+msgid "Countries"
+msgstr "Categories"
+
+#: apps/models.py:60
 msgid "product_title"
 msgstr "Title of product"
 
-#: apps/models.py:48
+#: apps/models.py:61
 msgid "product_description"
 msgstr "Description of product"
 
-#: apps/models.py:50
+#: apps/models.py:63
 #, fuzzy
 #| msgid "product_title"
 msgid "product_image"
 msgstr "Title of product"
 
-#: apps/models.py:51
+#: apps/models.py:64
 msgid "product_price"
 msgstr "Price of product"
 
-#: apps/models.py:52
+#: apps/models.py:65
 msgid "product_quantity"
 msgstr "Quantity of product"
 
-#: apps/models.py:53
+#: apps/models.py:66
 msgid "product_category"
 msgstr "Category of product"
 
-#: apps/models.py:56
+#: apps/models.py:67
+#, fuzzy
+#| msgid "product_category"
+msgid "product_country"
+msgstr "Category of product"
+
+#: apps/models.py:70
 msgid "Product"
 msgstr "Product"
 
-#: apps/models.py:57 templates/apps/base.html:75 templates/apps/base.html:118
-#: templates/apps/base.html:182 templates/apps/product.html:16
+#: apps/models.py:71 templates/apps/base.html:76 templates/apps/base.html:119
+#: templates/apps/base.html:194 templates/apps/product.html:16
 #: templates/apps/product_detail.html:99 templates/apps/products_list.html:12
 #: templates/apps/products_list.html:16
 msgid "Products"
 msgstr "Products"
 
-#: apps/models.py:78
+#: apps/models.py:92
 msgid "News_Receiver"
 msgstr "Receiver"
 
-#: apps/models.py:79
+#: apps/models.py:93
 msgid "News_Receivers"
 msgstr "Receivers"
 
-#: apps/models.py:84
+#: apps/models.py:98
 msgid "new_title"
 msgstr "Title of product"
 
-#: apps/models.py:85
+#: apps/models.py:99
 #, fuzzy
 #| msgid "product_description"
 msgid "new_description"
 msgstr "Description of product"
 
-#: apps/models.py:87
+#: apps/models.py:101
 msgid "new_image"
 msgstr "Image of product"
 
-#: apps/models.py:90
+#: apps/models.py:104
 msgid "New"
 msgstr "New"
 
-#: apps/models.py:91
+#: apps/models.py:105
 msgid "News"
 msgstr "News"
 
-#: root/settings.py:92
+#: root/settings.py:88
 msgid "English"
 msgstr "English"
 
-#: root/settings.py:93
+#: root/settings.py:89
 msgid "Russian"
 msgstr "Russian"
 
-#: root/settings.py:94
+#: root/settings.py:90
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: templates/apps/base.html:73
+#: templates/apps/base.html:74
 msgid "About_Us_header"
 msgstr "About Us"
 
-#: templates/apps/base.html:74 templates/apps/base.html:117
-#: templates/apps/base.html:179
+#: templates/apps/base.html:75 templates/apps/base.html:118
+#: templates/apps/base.html:191
 msgid "Services"
 msgstr "Services"
 
-#: templates/apps/base.html:76 templates/apps/base.html:119
-#: templates/apps/dashboard.html:196 templates/apps/partners.html:23
-#: templates/apps/partners.html:27
+#: templates/apps/base.html:77 templates/apps/base.html:120
+#: templates/apps/dashboard.html:196 templates/apps/partners.html:26
+#: templates/apps/partners.html:30
 msgid "Partners"
 msgstr "Partners"
 
-#: templates/apps/base.html:77
+#: templates/apps/base.html:78
 msgid "Contact_Us_header"
 msgstr "Contact Us"
 
-#: templates/apps/base.html:116
+#: templates/apps/base.html:117
 msgid "About_Us_inner"
 msgstr "About Us"
 
-#: templates/apps/base.html:120
+#: templates/apps/base.html:121
 msgid "Contact_Us_inner"
 msgstr "Contact Us"
 
-#: templates/apps/base.html:128
+#: templates/apps/base.html:140
 msgid "Order technique"
 msgstr "Order technique"
 
-#: templates/apps/base.html:151 templates/apps/partners.html:25
+#: templates/apps/base.html:163 templates/apps/partners.html:28
 msgid "About Us"
 msgstr "About Us"
 
-#: templates/apps/base.html:152
+#: templates/apps/base.html:164
 msgid ""
 "We ensure prompt delivery and installation of any medical equipment you "
 "purchase from us."
@@ -193,47 +215,47 @@ msgstr ""
 "We ensure prompt delivery and installation of any medical equipment you "
 "purchase from us."
 
-#: templates/apps/base.html:166
+#: templates/apps/base.html:178
 msgid "Quick Links"
 msgstr "Quick Links"
 
-#: templates/apps/base.html:173
+#: templates/apps/base.html:185
 msgid "About_Us_footer"
 msgstr "About Us"
 
-#: templates/apps/base.html:187
+#: templates/apps/base.html:199
 msgid "Contact_Us_footer"
 msgstr "Contact Us"
 
-#: templates/apps/base.html:191
+#: templates/apps/base.html:203
 msgid "Other Links"
 msgstr "Other Links"
 
-#: templates/apps/base.html:200
+#: templates/apps/base.html:212
 msgid "Open Hours"
 msgstr "Open Hours"
 
-#: templates/apps/base.html:202 templates/apps/dashboard.html:98
+#: templates/apps/base.html:214 templates/apps/dashboard.html:98
 msgid "Monday - Saturday"
 msgstr "Mon - Sat:"
 
-#: templates/apps/base.html:202 templates/apps/dashboard.html:99
+#: templates/apps/base.html:214 templates/apps/dashboard.html:99
 msgid "9am-7pm"
 msgstr "9am-7pm"
 
-#: templates/apps/base.html:203
+#: templates/apps/base.html:215
 msgid "Sunday and Holidays - days off"
 msgstr "Sunday and Holidays - days off"
 
-#: templates/apps/base.html:209
+#: templates/apps/base.html:221
 msgid "Newsletter"
 msgstr "Newsletter"
 
-#: templates/apps/base.html:210
+#: templates/apps/base.html:222
 msgid "Subscribe to our newsletter to get all our news in your inbox."
 msgstr "Subscribe to our newsletter to get all our news in your inbox."
 
-#: templates/apps/base.html:213
+#: templates/apps/base.html:225
 msgid "Email Address"
 msgstr "Email Address"
 

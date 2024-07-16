@@ -42,6 +42,19 @@ class Category(TranslatableModel):
         return self.product_set.count()
 
 
+class Country(TranslatableModel):
+    translations = TranslatedFields(
+        name=CharField(verbose_name=_('country_name'), max_length=75)
+    )
+
+    class Meta:
+        verbose_name = _('Country')
+        verbose_name_plural = _('Countries')
+
+    def __str__(self):
+        return self.name
+
+
 class Product(TranslatableModel, BaseDateTimeModel):
     translations = TranslatedFields(
         title=CharField(verbose_name=_('product_title'), max_length=75),
@@ -51,6 +64,7 @@ class Product(TranslatableModel, BaseDateTimeModel):
     price = PositiveIntegerField(verbose_name=_('product_price'))
     quantity = PositiveIntegerField(verbose_name=_('product_quantity'))
     category = ForeignKey(verbose_name=_('product_category'), to='apps.Category', on_delete=CASCADE)
+    country = ForeignKey(verbose_name=_('product_country'), to='apps.Country', on_delete=CASCADE)
 
     class Meta:
         verbose_name = _('Product')

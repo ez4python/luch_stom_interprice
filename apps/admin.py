@@ -4,7 +4,7 @@ from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
 from parler.admin import TranslatableAdmin
 
-from apps.models import User, Category, Product, NewsReceiver
+from apps.models import User, Category, Product, NewsReceiver, Country
 
 
 @admin.register(User)
@@ -47,6 +47,11 @@ class CategoryTranslatableAdmin(TranslatableAdmin):
 @admin.register(Product)
 class ProductTranslatableAdmin(TranslatableAdmin):
     list_display = ['title', 'price', 'quantity']
+
+
+@admin.register(Country)
+class CountryTranslatableAdmin(TranslatableAdmin):
+    list_display = ['name']
 
 
 @admin.register(NewsReceiver)

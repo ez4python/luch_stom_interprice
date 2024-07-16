@@ -49,11 +49,6 @@ class ProductTranslatableAdmin(TranslatableAdmin):
     list_display = ['title']
 
 
-@admin.register(Country)
-class CountryTranslatableAdmin(TranslatableAdmin):
-    list_display = ['name']
-
-
 @admin.register(NewsReceiver)
 class NewsReceiverModelAdmin(ModelAdmin):
     list_display = ['email']

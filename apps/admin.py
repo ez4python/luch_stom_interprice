@@ -46,7 +46,7 @@ class CategoryTranslatableAdmin(TranslatableAdmin):
 
 @admin.register(Product)
 class ProductTranslatableAdmin(TranslatableAdmin):
-    list_display = ['title', 'price', 'quantity']
+    list_display = ['title']
 
 
 @admin.register(Country)

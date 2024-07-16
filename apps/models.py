@@ -61,10 +61,7 @@ class Product(TranslatableModel, BaseDateTimeModel):
         description=CKEditor5Field(verbose_name=_('product_description'), config_name='extends')
     )
     image = ImageField(verbose_name=_('product_image'), upload_to='category/images')
-    price = PositiveIntegerField(verbose_name=_('product_price'))
-    quantity = PositiveIntegerField(verbose_name=_('product_quantity'))
     category = ForeignKey(verbose_name=_('product_category'), to='apps.Category', on_delete=CASCADE)
-    country = ForeignKey(verbose_name=_('product_country'), to='apps.Country', on_delete=CASCADE)
 
     class Meta:
         verbose_name = _('Product')

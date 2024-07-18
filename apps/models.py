@@ -77,9 +77,9 @@ class Product(TranslatableModel, BaseDateTimeModel):
         is_new_instance = self.pk is None
         super().save(force_insert, force_update, using, update_fields)
 
-        # if is_new_instance:
-        #     all_emails = list(NewsReceiver.objects.values_list('email', flat=True))
-        #     task_send_email.delay('LUCH STOM INTERPRISE', self.title, all_emails)
+        if is_new_instance:
+            all_emails = list(NewsReceiver.objects.values_list('email', flat=True))
+            task_send_email.delay('LUCH STOM INTERPRISE', self.title, all_emails)
 
 
 class NewsReceiver(BaseDateTimeModel):

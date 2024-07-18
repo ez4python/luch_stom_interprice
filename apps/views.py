@@ -10,7 +10,7 @@ from root.settings import DEFAULT_RECIPIENT
 
 class DashboardView(ListView):
     template_name = 'apps/dashboard.html'
-    queryset = Product.objects.order_by('-id')[:5]
+    queryset = Product.objects.order_by('id')
 
 
 class ContactView(TemplateView):

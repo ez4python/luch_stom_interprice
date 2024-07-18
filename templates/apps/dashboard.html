@@ -15,7 +15,7 @@
                                 <h1 style="text-shadow: 0.1em 3px 6px lightslategrey">{% trans 'We <span>Sell</span> Products That Exceed Your Expectations!' %}</h1>
                                 <p>{% trans 'Discover quality and reliability with our top-notch products, designed to cater to all your needs.' %}</p>
                                 <div class="button">
-                                    <a href="#" class="btn">{% trans 'View Products' %}</a>
+                                    <a href="{% url 'products_view' %}" class="btn">{% trans 'View Products' %}</a>
                                     <a href="#" class="btn primary">{% trans 'Learn More' %}</a>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-12">
                         <!-- single-schedule -->
-                        <div class="single-schedule first" >
+                        <div class="single-schedule first">
                             <div class="inner">
                                 <div class="icon">
                                     <i class="fa fa-ambulance"></i>
@@ -268,7 +268,7 @@
                                 </div>
                             </div>
                             <!--/ End Video Animation -->
-                            <a href="https://www.youtube.com/watch?v=W5LPcpIRLzs"
+                            <a href="#"
                                class="video video-popup mfp-iframe">
                                 <i class="fa fa-play"></i>
                             </a>
@@ -316,12 +316,13 @@
             <div class="row">
                 <div class="col-lg-12 col-12">
                     <div class="owl-carousel portfolio-slider">
-{#                        {% for product in object_list %}#}
-{#                            <div class="single-pf" style="height: 400px">#}
-{#                                <img src="{{ product.image.url }}" alt="#">#}
-{#                                <a href="#" class="btn">{% trans 'View Details' %}</a>#}
-{#                            </div>#}
-{#                        {% endfor %}#}
+                        {% for product in object_list %}
+                            <div class="single-pf" style="height: 400px">
+                                <img src="{{ product.image.url }}" style="border-radius: 50px" alt="#">
+                                <a href="{% url 'product_detail_view' product.pk %}"
+                                   class="btn">{% trans 'View Details' %}</a>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
